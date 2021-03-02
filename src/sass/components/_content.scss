@@ -1,0 +1,59 @@
+// =============================================================================
+// Content
+// =============================================================================
+
+.content {
+	a {
+		text-decoration: none;
+	}
+
+	abbr {
+		border-bottom: 1px dotted;
+		cursor: help;
+	}
+
+	cite {
+		font-style: italic;
+	}
+
+	hr {
+		background: $color-grey-light;
+		border: none;
+		display: block;
+		height: 1px;
+		margin-bottom: 1.5em;
+		margin-top: 1.5em
+	}
+
+	img {
+		vertical-align:text-bottom
+	}
+
+	small {
+		font-size: $font-size-small;
+	}
+
+	strong {
+		font-weight: $font-weight-bold;
+	}
+
+	sub, sup {
+		font-size: $font-size-small;
+	}
+
+	sub {
+		vertical-align: sub;
+	}
+
+	sup {
+		vertical-align: super;
+	}
+
+	p:last-child, dl:last-child, ol:last-child, ul:last-child, blockquote:last-child, pre:last-child, table:last-child {
+		margin-bottom: 0;
+	}
+
+	p:empty {
+		display:none
+	}
+}

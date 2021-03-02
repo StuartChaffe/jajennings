@@ -1,0 +1,40 @@
+// =============================================================================
+// Buttons
+// =============================================================================
+
+.btn {
+	display: inline-block;
+	border-radius: $radius;
+	padding: 0 3rem;
+	border: 1px solid $color-grey;
+	color: $color-grey-dark;
+	height: 40px;
+	line-height: 40px;
+	font-family: $font-family-display;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-base;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+
+	&:hover, &:focus {
+		border-color: darken($color-grey, 10%);
+		outline: 0;
+		color: $color-grey-dark;
+		text-decoration: none;
+		position: relative;
+		top: -1px;
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.10);
+	}
+}
+
+.btn--primary {
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	color: $color-text-reversed;
+
+	&:hover, &:focus {
+		border-color: $color-primary;
+		color: $color-text-reversed;
+	}
+}

@@ -1,0 +1,28 @@
+// =============================================================================
+// Helper classes
+// =============================================================================
+
+.u-bold { font-weight: bold!important; }
+.u-semibold { font-weight: 600!important; }
+.u-regular { font-weight: normal!important; }
+.u-light { font-weight: 300!important; }
+.u-italic { font-style: italic!important; }
+.u-caps { text-transform: uppercase!important; }
+.u-left-align { text-align: left!important; }
+.u-center { text-align: center!important; }
+.u-right-align { text-align: right!important; }
+
+// WordPress specifc
+img.alignright      { float: right; margin: 0 0 1em 1em; }
+img.alignleft       { float: left; margin: 0 1em 1em 0; }
+img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
+.alignright         { float: right; }
+.alignleft          { float: left; }
+.aligncenter        { display: block; margin-left: auto; margin-right: auto; }
+
+// debugging
+@if $debug == true {
+    * {
+        box-shadow: inset 0 0 0 1px red;
+    }
+}

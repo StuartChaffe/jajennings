@@ -1,0 +1,31 @@
+// =============================================================================
+// Tables
+// =============================================================================
+
+table {
+	margin-bottom: 1em;
+}
+
+table th,
+table td {
+	padding: 0.5em;
+	border-bottom: 1px solid $color-grey-light;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+table th {
+	border-width: 2px;
+}
+
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table tr:nth-child(even) {
+	background: $color-grey-light;
+}
+
+table tbody tr:hover {
+	background: $color-grey;
+}

@@ -1,0 +1,9 @@
+.env
+node_modules
+*.log
+*.sql
+*.sqlite
+*.bak
+.DS_Store
+Thumbs.db
+.nova

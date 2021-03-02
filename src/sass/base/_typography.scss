@@ -1,0 +1,72 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+p {
+	margin-bottom: 1.4em;
+	margin-top: 0;
+}
+
+p.lead {
+	font-size: fluid-type($font-size-lead);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-display;
+    color: $color-text-base;
+    text-rendering: optimizelegibility;
+	margin-bottom: .7em;
+	margin-top: 0;
+	font-weight: $font-weight-headings;
+	line-height: $heading-line-height;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
+	margin-top: 1.4em;
+}
+
+h1, .h1 { font-size: fluid-type($font-size-h1); }
+h2, .h2 { font-size: fluid-type($font-size-h2); }
+h3, .h3 { font-size: fluid-type($font-size-h3); }
+h4, .h4 { font-size: fluid-type($font-size-h4); }
+h5, .h5 { font-size: fluid-type($font-size-h5); }
+h6, .h6 { font-size: fluid-type($font-size-h6); }
+
+a {
+	color: $color-text-link;
+	text-decoration: none;
+}
+
+a:focus,
+a:hover {
+	color: $color-text-hover;
+	text-decoration: underline;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 1em;
+	border-left: 8px solid $color-grey-light;
+}
+
+blockquote p {
+	margin-bottom: 0.2em;
+}
+
+blockquote footer {
+	color: $color-text-dark;
+	font-size: $font-size-small;
+}
+
+ol, ul {
+	padding-left: 1.5em;
+}
+
+dt {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}

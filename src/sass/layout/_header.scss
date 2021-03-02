@@ -1,0 +1,14 @@
+// =============================================================================
+// Header
+// =============================================================================
+
+.global-header {
+	display: flex;
+	justify-content: space-between;
+	background: #eee;
+}
+
+.global-header__logo {
+	font-size: 2rem;
+	margin: 0;
+}

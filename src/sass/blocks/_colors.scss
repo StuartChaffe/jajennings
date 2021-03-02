@@ -1,0 +1,13 @@
+// =============================================================================
+// Block colours
+// =============================================================================
+
+@each $name, $color in $block-colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}
