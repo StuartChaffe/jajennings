@@ -1,14 +1,14 @@
-# Origin – WordPress Theme Boilerplate
+# JA Jennings – WordPress Theme
 
-## Install Origin
+## Install Theme
 
 Open terminal:
 
 `cd path/to/wp-content/themes`
 
-`git clone git@github.com:marcjenkins/origin.git my-theme`
+`git clone git@github.com:StuartChaffe/jajennings.git ja-jennings`
 
-`cd my-theme`
+`cd ja-jennings`
 
 `npm install`
 
