@@ -35,26 +35,26 @@ add_theme_support( 'disable-custom-font-sizes' );
  */
 add_theme_support( 'disable-custom-colors' );
 add_theme_support( 'editor-color-palette', array(
-    array(
-        'name'  => __( 'Blue', 'origin-colors' ),
-        'slug'  => 'blue',
-        'color'	=> '#59BACC',
-    ),
-    array(
-        'name'  => __( 'Green', 'origin-colors' ),
-        'slug'  => 'green',
-        'color' => '#58AD69',
-    ),
-    array(
-        'name'  => __( 'Orange', 'origin-colors' ),
-        'slug'  => 'orange',
-        'color' => '#FFBC49',
-    ),
-    array(
-        'name'  => __( 'Red', 'origin-colors' ),
-        'slug'  => 'red',
-        'color' => '#E2574C',
-    ),
+	array(
+		'name'  => __( 'Purple', 'origin-colors' ),
+		'slug'  => 'theme-purple',
+		'color'	=> '#5E4078',
+	),
+	array(
+		'name'  => __( 'Blue', 'origin-colors' ),
+		'slug'  => 'theme-blue',
+		'color' => '#4882AC',
+	),
+	array(
+		'name'  => __( 'Orange', 'origin-colors' ),
+		'slug'  => 'theme-orange',
+		'color' => '#B93C32',
+	),
+	array(
+		'name'  => __( 'Yellow', 'origin-colors' ),
+		'slug'  => 'theme-yellow',
+		'color' => '#FAC828',
+	),
 ) );
 
 /**

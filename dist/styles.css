@@ -88,7 +88,7 @@ html, body {
 
 body {
   background-color: #fff;
-  color: #333;
+  color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: calc(16px + 0.3vw);
   line-height: 1.5;
@@ -116,7 +116,7 @@ p.lead {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #333;
+  color: #000;
   text-rendering: optimizelegibility;
   margin-bottom: 0.7em;
   margin-top: 0;
@@ -269,7 +269,7 @@ input[type=button] {
   display: block;
   padding: 1em;
   margin: 0.5em 0;
-  background: #59BACC;
+  background: #5E4078;
   color: #fff;
   border-radius: 4px;
   transition: all 0.2s linear;
@@ -326,9 +326,15 @@ table tbody tr:hover {
 }
 
 .global-alert {
-  background: #59BACC;
-  text-align: center;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fac828;
+  background: linear-gradient(45deg, #fac828 0%, #faaa28 100%);
+  padding: 0.5rem;
+}
+.global-alert a {
+  color: #000;
 }
 
 .global-alert p {
@@ -362,13 +368,59 @@ table tbody tr:hover {
 }
 
 .btn--primary {
-  background-color: #59BACC;
-  border: 1px solid #59BACC;
+  background-color: #5E4078;
+  border: 1px solid #5E4078;
   color: #fff;
 }
 .btn--primary:hover, .btn--primary:focus {
-  border-color: #59BACC;
+  border-color: #5E4078;
   color: #fff;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+@media (min-width: 50em) {
+  .banner {
+    min-height: 620px;
+  }
+}
+.banner__image {
+  position: absolute;
+  display: block;
+  z-index: 0;
+  order: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  min-width: 100%;
+}
+.banner__image img {
+  max-width: none;
+  min-width: 100%;
+  width: auto;
+}
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.banner__overlay .stop-1 {
+  color: #5e4078;
+}
+.banner__overlay .stop-2 {
+  color: #825c8a;
+}
+.banner__content {
+  z-index: 1;
 }
 
 .content a {
@@ -415,16 +467,23 @@ table tbody tr:hover {
 }
 
 .icon {
-  display: inline-block;
-  vertical-align: middle;
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
+  display: flex;
+}
+.icon--arrow {
+  width: 8px;
+  height: 13px;
+}
+
+.banner-logo .stop-1 {
+  color: #5e4078;
+}
+.banner-logo .stop-2 {
+  color: #825c8a;
 }
 
 .icon--small {
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
 }
 
 .icon--medium {
@@ -435,31 +494,6 @@ table tbody tr:hover {
 .icon--large {
   width: 32px;
   height: 32px;
-}
-
-.icon--xlarge {
-  width: 40px;
-  height: 40px;
-}
-
-.icon--scale {
-  width: 0.75em;
-  height: 0.75em;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-}
-
-.icon--top {
-  vertical-align: top;
-}
-
-.icon--bottom {
-  vertical-align: bottom;
-}
-
-.icon--offset {
-  margin-right: 5px;
 }
 
 .global-header {
@@ -508,36 +542,36 @@ table tbody tr:hover {
   margin: 0;
 }
 
+.has-purple-color {
+  color: #5E4078;
+}
+
+.has-purple-background-color {
+  background-color: #5E4078;
+}
+
 .has-blue-color {
-  color: #59BACC;
+  color: #4882AC;
 }
 
 .has-blue-background-color {
-  background-color: #59BACC;
-}
-
-.has-green-color {
-  color: #58AD69;
-}
-
-.has-green-background-color {
-  background-color: #58AD69;
+  background-color: #4882AC;
 }
 
 .has-orange-color {
-  color: #FFBC49;
+  color: #B93C32;
 }
 
 .has-orange-background-color {
-  background-color: #FFBC49;
+  background-color: #B93C32;
 }
 
-.has-red-color {
-  color: #E2574C;
+.has-yello-color {
+  color: #FAC828;
 }
 
-.has-red-background-color {
-  background-color: #E2574C;
+.has-yello-background-color {
+  background-color: #FAC828;
 }
 
 /* Post title width */

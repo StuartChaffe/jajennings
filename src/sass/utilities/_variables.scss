@@ -10,12 +10,12 @@ $color-grey: #ddd;
 $color-grey-light: #efefef;
 $color-white: #fff;
 
-$color-primary: #59BACC;
-$color-secondary: #58AD69;
-$color-tertiary: #FFBC49;
-$color-quaternary: #E2574C;
+$color-primary: #5E4078;
+$color-secondary: #4882AC;
+$color-tertiary: #B93C32;
+$color-quaternary: #FAC828;
 
-$color-text-base: #333;
+$color-text-base: #000;
 $color-text-dark: #181822;
 $color-text-reversed: #fff;
 $color-text-link: #0087D0;
@@ -29,10 +29,10 @@ $color-linkedin: #0077B5;
 
 // Block colours
 $block-colors: 
-    ( blue, $color-primary ),
-	( green, $color-secondary ),
-	( orange, $color-tertiary ),
-	( red, $color-quaternary );
+	( "purple", $color-primary ),
+	( "blue", $color-secondary ),
+	( "orange", $color-tertiary ),
+	( "yello", $color-quaternary );
 
 /* Typography */
 $font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

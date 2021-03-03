@@ -1,2 +1,13 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{null:function(n,w){}}]);
-//# sourceMappingURL=sprite.js.map
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/svg/sprite"],{
+
+/***/ null:
+/*!********************************!*\
+  !*** /svg/sprite-dummy-module ***!
+  \********************************/
+/***/ (function(module, exports) {
+
+
+
+/***/ })
+
+}]);
