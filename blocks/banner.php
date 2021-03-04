@@ -20,11 +20,11 @@ $backgroundmobile = get_field( 'banner-background-mobile');
 ?>
 <div class="banner">
 	<div class="banner-outer">
-	<?php if ( $image ) : ?>
+	<?php if ( $image ) { ?>
 		<div class="banner__image">
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</div>
-	<?php endif; ?>
+	<?php } ?>
 		<svg class="banner__overlay" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464 618">
 			<defs>
 				<linearGradient class="banner-logo" id="linear-gradient" x1="0.243" y1="0.648" x2="0.742" y2="0.022" gradientUnits="objectBoundingBox">

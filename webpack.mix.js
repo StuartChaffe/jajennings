@@ -20,14 +20,15 @@ mix
         open: 'external',
         port: process.env.MIX_PORT,
         injectChanges: true,
-        https: {
-            key: process.env.MIX_HTTPS_KEY,
-            cert: process.env.MIX_HTTPS_CERT
-        },
+        // https: {
+        //     key: process.env.MIX_HTTPS_KEY,
+        //     cert: process.env.MIX_HTTPS_CERT
+        // },
         files: [
           'dist/styles.css',
           'dist/main.js',
-          '*.php'
+          '*.php',
+          '*/*.php'
         ]
     });
     

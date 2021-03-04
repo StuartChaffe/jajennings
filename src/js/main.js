@@ -11,10 +11,10 @@ jQuery(document).ready(function($) {
 		$menuContainer.toggleClass("is-active");
 	});
 
-	window.addEventListener("scroll", checkPosition);
-	window.addEventListener("resize", init);
+	// window.addEventListener("scroll", checkPosition);
+	// window.addEventListener("resize", init);
 
-	init();
-	checkPosition();
+	// init();
+	// checkPosition();
 
 });
