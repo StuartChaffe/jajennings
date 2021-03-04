@@ -83,7 +83,7 @@
                     "key": "field_603f885ed4b49",
                     "label": "Link",
                     "name": "banner-title-link",
-                    "type": "page_link",
+                    "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -92,11 +92,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": "",
-                    "taxonomy": "",
-                    "allow_null": 0,
-                    "allow_archives": 0,
-                    "multiple": 0
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -118,5 +115,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614776457
+    "modified": 1614782944
 }

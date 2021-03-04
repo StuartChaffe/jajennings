@@ -1,10 +1,16 @@
 // =============================================================================
 // Typography
 // =============================================================================
-
+::selection {
+	background: lighten($color-primary, 50%); /* WebKit/Blink Browsers */
+  }
+::-moz-selection {
+	background: lighten($color-primary, 50%); /* Gecko Browsers */
+}
 p {
 	margin-bottom: 1.4em;
 	margin-top: 0;
+	font-size: $font-size-base;
 }
 
 p.lead {
@@ -12,13 +18,14 @@ p.lead {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-display;
-    color: $color-text-base;
-    text-rendering: optimizelegibility;
-	margin-bottom: .7em;
+	font-family: $font-family-display;
+	color: $color-primary;
+	text-rendering: optimizelegibility;
+	margin-bottom: 1em;
 	margin-top: 0;
 	font-weight: $font-weight-headings;
 	line-height: $heading-line-height;
+
 }
 
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {

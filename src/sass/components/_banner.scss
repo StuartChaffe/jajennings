@@ -1,19 +1,20 @@
 .banner {
-	// background-color: $color-primary;
-	// position: relative;
-	// overflow: hidden;
-
 	width: 100%;
 	position: relative;
 	height: 60vh;
 	min-height: 500px;
 	display: flex;
-	align-items: center;
-	// z-index: 2;
-	overflow: hidden;
+	align-items: flex-end;
+	margin-bottom: $spacing * 1.5;
 	
 	@include mq(medium) {
 		min-height: 620px;
+	}
+	&-outer {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
 	}
 
 	&__image {
@@ -52,5 +53,45 @@
 
 	&__content {
 		z-index: 1;
+		background: $color-primary;
+		margin-left: auto;
+		width: 90%;
+		padding: 40px;
+		transform: translateY(50%);
+		
+		@include mq(medium) {
+			width: 60%;
+			padding: 40px 80px 40px 40px;
+		}
+
+		h1 {
+			color: white;
+			margin: 0;
+			position: relative;
+			display: inline;
+			@include mq($until: medium) {
+				font-size: 1.7rem;
+			}
+		}
+		.icon {
+			display: inline;
+			margin-left: 1rem;
+			transform: translateY(-5px);
+			transition: .2s margin-left ease-in-out;
+		}
+
+		&--link {
+			transition: .2s background-color ease-in-out;
+			&:hover, &:focus {
+				background-color: darken($color-primary, 5%);
+				text-decoration: none;
+				transition: .2s background-color ease-in-out;
+
+				.icon {
+					margin-left: 1.5rem;
+					transition: .2s margin-left ease-in-out;
+				}
+			}
+		}
 	}
 }
