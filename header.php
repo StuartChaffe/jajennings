@@ -20,6 +20,6 @@
 
 <?php if(get_field('alert', 'options')): ?>
 <div class="global-alert">
-	<?php the_field('alert_text', 'options'); ?>
+	<?php the_field('alert_text', 'options', false, false); ?>
 </div>
 <?php endif; ?>

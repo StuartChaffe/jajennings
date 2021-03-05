@@ -4,9 +4,106 @@
 
 .global-footer {
 	margin-top: $spacing;
-	padding: 1rem 0;
-	text-align: center;
 	background-color: $color-primary;
+	font-size: $font-size-small;
+	line-height: 1.5;
+	color: white;
+	p, link, a {
+		color: white;
+		font-size: $font-size-small;
+	}
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	ul {
+		padding-left: 0;
+		font-size: $font-size-small;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		&-top {
+			display: flex;
+			flex-direction: row;
+			padding: $spacing / 2 0;
+			flex-wrap: wrap;
+			&--contact {
+				width: 50%;
+				order: 1;
+				@include mq(medium) {
+					width: 20%;
+				}
+			}
+			&--address {
+				width: 100%;
+				order: 3;
+				margin-top: 1.5rem;
+				@include mq(medium) {
+					width: 30%;
+					margin-top: 0;
+				}
+			}
+			&--nav {
+				order: 3;
+				@include mq($until: medium) {
+					min-width: 25%;
+					order: 2;
+					margin-left: auto;
+				}
+
+			}
+			&--images {
+				order: 4;
+				margin-left: auto;
+				@include mq($until: medium) {
+					width: 100%;
+					margin-top: 2rem;
+				}
+				
+			}
+		}
+		&-bottom {
+			display: flex;
+			flex-direction: column;
+			border-top: 1px solid rgba(255,255,255,0.5);
+			padding: $spacing / 2 0 1.5rem 0;
+			@include mq(medium) {
+				flex-direction: row;
+				padding: $spacing / 2 0;
+			}
+			&--copy {
+				width: 100%;
+				@include mq(medium) {
+					width: 50%;
+				}
+			}
+
+			&--nav {
+				display: flex;
+				flex-direction: row;
+				ul {
+					margin-top: 2rem;
+					@include mq(medium) {
+						margin-top: 0;
+					}
+					li {
+						display: block;
+						margin-right: 2rem;
+						@include mq(medium) {
+							display: inline;
+						}
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .social-links {

@@ -1,24 +1,45 @@
 <footer class="global-footer">
-	<?php if(get_field('company_tel', 'options')): ?>
-		<p>Tel</p>
-		<p><?php the_field('company_tel', 'options'); ?></p>
-	<?php endif; ?>
-	<?php if(get_field('company_fax', 'options')): ?>
-		<p>Fax</p>
-		<p><?php the_field('company_fax', 'options'); ?></p>
-	<?php endif; ?>
-	<?php if(get_field('company_email', 'options')): ?>
-		<p>Email</p>
-		<p><?php the_field('company_email', 'options'); ?></p>
-	<?php endif; ?>
-	<?php if(get_field('company_address', 'options')): ?>
-		<?php the_field('company_address', 'options'); ?>
-	<?php endif; ?>
+	<div class="container">
+		<div class="global-footer__content">
+			<div class="global-footer__content-top">
+				<div class="global-footer__content-top--contact">
+				<?php if(get_field('company_tel', 'options')): ?>
+					<p>Telephone:<br />
+					<?php the_field('company_tel', 'options'); ?></p>
+				<?php endif; ?>
+				<?php if(get_field('company_fax', 'options')): ?>
+					<p>Fax:<br />
+					<?php the_field('company_fax', 'options'); ?></p>
+				<?php endif; ?>
+				<?php if(get_field('company_email', 'options')): ?>
+					<p>Email:<br />
+					<?php the_field('company_email', 'options'); ?></p>
+				<?php endif; ?>
+				</div>
+				<div class="global-footer__content-top--address">
+				<?php if(get_field('company_address', 'options')): ?>
+					<?php the_field('company_address', 'options'); ?>
+				<?php endif; ?>
+				</div>
 
-	<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
+				<div class="global-footer__content-top--nav">
+					<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
+				</div>
 
-	<p>&copy; <?php echo date('Y'); ?>J.A. Jennings, Inc. All rights reserved.</p>
-	<?php wp_nav_menu( array('theme_location' => 'policy') ); ?>
+				<div class="global-footer__content-top--images">
+					images
+				</div>
+			</div>
+			<div class="global-footer__content-bottom">
+				<div class="global-footer__content-bottom--copy">
+					<p>&copy; Copyright <?php echo date('Y'); ?> J.A. Jennings, Inc. All rights reserved.</p>
+				</div>
+				<div class="global-footer__content-bottom--nav">
+					<?php wp_nav_menu( array('theme_location' => 'policy') ); ?>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 
 </div>
