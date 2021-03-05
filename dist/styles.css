@@ -1,5 +1,42 @@
 /* Colours */
 /* Typography */
+.theme--purple h2, .theme--purple h3, .theme--purple h4 {
+  color: #5E4078;
+}
+.theme--purple .banner__content {
+  background: #5E4078;
+}
+.theme--purple .banner__overlay .stop-1 {
+  color: #5e4078;
+}
+.theme--purple .banner__overlay .stop-2 {
+  color: #825c8a;
+}
+.theme--blue h2, .theme--blue h3, .theme--blue h4 {
+  color: #4882AC;
+}
+.theme--blue .banner__content {
+  background: #4882AC;
+}
+.theme--blue .banner__overlay .stop-1 {
+  color: #C8582D;
+}
+.theme--blue .banner__overlay .stop-2 {
+  color: #B93C32;
+}
+.theme--red h2, .theme--red h3, .theme--red h4 {
+  color: #B93C32;
+}
+.theme--red .banner__content {
+  background: #B93C32;
+}
+.theme--red .banner__overlay .stop-1 {
+  color: #C8582D;
+}
+.theme--red .banner__overlay .stop-2 {
+  color: #B93C32;
+}
+
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -170,13 +207,13 @@ h6, .h6 {
 }
 
 a {
-  color: #0087D0;
+  color: #5E4078;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #003451;
+  color: #4882AC;
   text-decoration: underline;
 }
 
@@ -346,12 +383,12 @@ table tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fac828;
-  background: linear-gradient(45deg, #fac828 0%, #faaa28 100%);
 }
 .global-alert a {
   color: #000;
   font-size: 1rem;
+  background: #fac828;
+  background: linear-gradient(45deg, #fac828 0%, #faaa28 100%);
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -418,12 +455,15 @@ table tbody tr:hover {
   min-height: 500px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 @media (min-width: 50em) {
   .banner {
     min-height: 620px;
   }
+}
+.banner + * {
+  margin-top: 66.6666666667px !important;
 }
 .banner-outer {
   width: 100%;
@@ -454,12 +494,6 @@ table tbody tr:hover {
   top: 0;
   left: 0;
   height: 100%;
-}
-.banner__overlay .stop-1 {
-  color: #5e4078;
-}
-.banner__overlay .stop-2 {
-  color: #825c8a;
 }
 .banner__content {
   z-index: 1;
@@ -512,9 +546,6 @@ table tbody tr:hover {
   padding: 0 1.5rem;
 }
 
-.content a {
-  text-decoration: none;
-}
 .content abbr {
   border-bottom: 1px dotted;
   cursor: help;
@@ -555,6 +586,23 @@ table tbody tr:hover {
   display: none;
 }
 
+.cta {
+  margin: 100px 0;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.cta p:last-child {
+  margin-bottom: 0;
+}
+.cta .icon--arrow {
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  bottom: 0;
+  color: #5E4078;
+  transform: translateY(-5px);
+}
+
 .icon {
   display: flex;
 }
@@ -562,13 +610,6 @@ table tbody tr:hover {
   width: 12.5px;
   height: 10px;
   color: white;
-}
-
-.banner-logo .stop-1 {
-  color: #5e4078;
-}
-.banner-logo .stop-2 {
-  color: #825c8a;
 }
 
 .icon--small {
@@ -584,6 +625,52 @@ table tbody tr:hover {
 .icon--large {
   width: 32px;
   height: 32px;
+}
+
+.text-image {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .text-image {
+    flex-direction: row;
+  }
+}
+.text-image__image {
+  width: 40%;
+}
+.text-image__content {
+  width: 60%;
+  padding: 1rem 100px;
+}
+.text-image__content-link {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.text-image__content-link p {
+  margin: 0;
+  color: #000;
+}
+.text-image__content-link p:first-child {
+  color: #5E4078;
+}
+.text-image__content-link .icon {
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  top: 0;
+  color: #5E4078;
+  transform: translateY(5px);
+}
+.text-image__content-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.text-image__content-link:hover .icon {
+  transition: 0.2s transform ease-in-out;
+  transform: translate(0.5rem, 5px);
 }
 
 .global-header {
@@ -993,6 +1080,10 @@ table tbody tr:hover {
   color: black;
 }
 
+.cta + .global-footer {
+  margin-top: 0;
+}
+
 .global-container {
   display: flex;
   flex-direction: column;
@@ -1004,12 +1095,14 @@ table tbody tr:hover {
 .container {
   margin: 0 auto;
   padding: 0 1.5rem;
+  width: 100%;
   max-width: 1200px;
 }
 
 .container--large {
   margin: 0 auto;
   padding: 0 1.5em;
+  width: 100%;
   max-width: 1600px;
 }
 
@@ -1041,11 +1134,11 @@ table tbody tr:hover {
   background-color: #B93C32;
 }
 
-.has-yello-color {
+.has-yellow-color {
   color: #FAC828;
 }
 
-.has-yello-background-color {
+.has-yellow-background-color {
   background-color: #FAC828;
 }
 

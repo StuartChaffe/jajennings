@@ -8,4 +8,20 @@
 @import "components/_banner";
 @import "components/_icons";
 
+@import "layout/_site";
+
 @import "blocks/*.scss";
+
+.editor-styles-wrapper {
+	background-color: white !important;
+	height: auto !important;
+}
+.editor-styles-wrapper, .editor-styles-wrapper {
+	background-color: white !important;
+	height: auto !important;
+}
+
+
+.edit-post-layout .interface-interface-skeleton__content {
+	background-color: white !important;
+}

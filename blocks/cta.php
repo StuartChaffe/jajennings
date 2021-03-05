@@ -1,3 +1,21 @@
-<div class="block b-cta">
-    <h2 class="b-cta__title">My first block</h2>
+<?php
+/**
+ * The template used for displaying a cta block.
+ *
+ * @package _s
+ */
+
+$title = get_field('cta-title');
+$text = get_field('cta-text');
+?>
+
+<div class="container">
+	<div class="cta">
+	<?php if ( $title ) { ?>
+		<h2><?php echo $title; ?></h2>
+	<?php } ?>
+	<?php if ( $text ) { ?>
+		<p><?php echo $text; ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+	<?php } ?>
+	</div>
 </div>

@@ -2,6 +2,7 @@
 @import "utilities/_placeholders";
 @import "utilities/_mixins";
 @import "../../node_modules/sass-mq/mq";
+@import "utilities/_theme";
 
 @import "base/_reset";
 @import "base/_generic";
@@ -14,7 +15,9 @@
 @import "components/_buttons";
 @import "components/_banner";
 @import "components/_content";
+@import "components/_cta";
 @import "components/_icons";
+@import "components/_text-image";
 
 @import "layout/_header";
 @import "layout/_footer";

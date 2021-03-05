@@ -18,8 +18,8 @@ $color-quaternary: #FAC828;
 $color-text-base: #000;
 $color-text-dark: #181822;
 $color-text-reversed: #fff;
-$color-text-link: #0087D0;
-$color-text-hover: #003451;
+$color-text-link: $color-primary;
+$color-text-hover: $color-secondary;
 
 $color-facebook: #3B5998;
 $color-twitter: #1DA1F2;
@@ -32,7 +32,7 @@ $block-colors:
 	( "purple", $color-primary ),
 	( "blue", $color-secondary ),
 	( "orange", $color-tertiary ),
-	( "yello", $color-quaternary );
+	( "yellow", $color-quaternary );
 
 /* Typography */
 $font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

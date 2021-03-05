@@ -1,0 +1,50 @@
+{
+    "key": "group_60422762101ad",
+    "title": "Theme",
+    "fields": [
+        {
+            "key": "field_604227684902f",
+            "label": "Theme colour",
+            "name": "theme_colour",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "theme--purple": "Purple",
+                "theme--blue": "Blue",
+                "theme--red": "Red"
+            },
+            "default_value": "purple",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1614949039
+}

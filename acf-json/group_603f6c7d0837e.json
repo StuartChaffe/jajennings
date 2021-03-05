@@ -3,25 +3,6 @@
     "title": "Banner",
     "fields": [
         {
-            "key": "field_603f6c80c3ddb",
-            "label": "Banner",
-            "name": "banner",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_603f70a8813fe",
             "label": "Image",
             "name": "banner-image",
@@ -115,5 +96,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614782944
+    "modified": 1614949190
 }

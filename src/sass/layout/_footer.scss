@@ -118,3 +118,9 @@
 .social-links__link {
 	color: black;
 }
+
+// Remove margins if added together
+
+.cta + .global-footer {
+	margin-top: 0;
+}

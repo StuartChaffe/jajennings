@@ -7,16 +7,17 @@
 
 $image = get_field( 'banner-image');
 $title = get_field('banner-title');
+$text = get_sub_field('banner-title-text');
 
-$code = get_field('banner-code');
-$background2 = get_field( 'banner-background');
-$image = get_field( 'banner-image');
-$imagemobile = get_field( 'banner-image-mobile');
-$background= get_field( 'banner-background');
-$alt = $background['alt'];
-$size = 'Banner-large';
-$thumb = $background['sizes'][ $size ];
-$backgroundmobile = get_field( 'banner-background-mobile');
+// $code = get_field('banner-code');
+// $background2 = get_field( 'banner-background');
+// $image = get_field( 'banner-image');
+// $imagemobile = get_field( 'banner-image-mobile');
+// $background= get_field( 'banner-background');
+// $alt = $background['alt'];
+// $size = 'Banner-large';
+// $thumb = $background['sizes'][ $size ];
+// $backgroundmobile = get_field( 'banner-background-mobile');
 ?>
 <div class="banner">
 	<div class="banner-outer">
@@ -35,7 +36,7 @@ $backgroundmobile = get_field( 'banner-background-mobile');
 			<path data-name="Union 1" d="M154,618,309,463V618ZM309,309H464L309,464ZM0,464V309H154L309,154V309H155V464ZM0,155V0H155V155Z" fill="url(#linear-gradient)"/>
 		</svg>
 	</div>
-	<?php if ( $title ) { ?>
+	<?php if ( $title['banner-title-text'] ) { ?>
 		<?php if ( $title['banner-title-link'] ) { ?>
 		<a class="banner__content banner__content-link" href="<?php echo $title['banner-title-link']; ?>">
 		<?php } else { ?>

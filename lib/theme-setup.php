@@ -80,3 +80,13 @@ function img_unautop($pee) {
  }
  add_filter( 'acf_the_content', 'img_unautop', 30 ); //only use this one if you have ACF content
  add_filter( 'the_content', 'img_unautop', 30 ); //regular content for POSTS and PAGES
+
+/**
+ * Add theme colour to body from ACF
+*/
+function add_acf_body_class($class) {
+	$value = get_field('theme_colour');
+	$class[] = $value;
+	return $class;
+}
+add_filter('body_class', 'add_acf_body_class');

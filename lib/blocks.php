@@ -19,15 +19,6 @@ function jajennings_acf_blocks() {
 	if( function_exists('acf_register_block') ) {
 
 		acf_register_block(array(
-			'name'				=> 'cta',
-			'title'				=> __('Call to Action Block'),
-			'description'		=> __('Add a CTA block'),
-			'render_callback'	=> 'jajennings_acf_block_render_callback',
-			'category'			=> 'jajennings-blocks',
-			'icon'				=> 'megaphone',
-			'keywords'			=> array( 'events' )
-		));
-		acf_register_block(array(
 			'name'				=> 'banner',
 			'title'				=> __('Banner'),
 			'description'		=> __('Add a banner block'),
@@ -35,9 +26,35 @@ function jajennings_acf_blocks() {
 			'category'			=> 'jajennings-blocks',
 			'icon'				=> 'format-image',
 			'align' 			=> 'full',
-            'keywords'			=> array( 'banner' )
+			'keywords'			=> array( 'banner' )
 		));
-
+		acf_register_block(array(
+			'name'				=> 'cta',
+			'title'				=> __('Call to action'),
+			'description'		=> __('Add a CTA block'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'megaphone',
+			'keywords'			=> array( 'cta, call to action' )
+		));
+		acf_register_block(array(
+			'name'				=> 'content',
+			'title'				=> __('Content block'),
+			'description'		=> __('Add a standard content block'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'analytics',
+			'keywords'			=> array( 'content' )
+		));
+		acf_register_block(array(
+			'name'				=> 'text-image',
+			'title'				=> __('Text with Image'),
+			'description'		=> __('Add a standard content block'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'id',
+			'keywords'			=> array( 'text with image, text' )
+		));
 	}
 }
 

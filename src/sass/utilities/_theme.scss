@@ -1,0 +1,50 @@
+.theme {
+	&--purple {
+		h2, h3, h4 {
+			color: $color-primary;
+		}
+		.banner__content {
+			background: $color-primary;
+		}
+		.banner__overlay {
+			.stop-1 {
+				color: #5e4078;
+			}
+			.stop-2 {
+				color: #825c8a;
+			}
+		}
+	}
+	&--blue {
+		h2, h3, h4 {
+			color: $color-secondary;
+		}
+		.banner__content {
+			background: $color-secondary;
+		}
+		.banner__overlay {
+			.stop-1 {
+				color: #C8582D;
+			}
+			.stop-2 {
+				color: #B93C32;
+			}
+		}
+	}
+	&--red {
+		h2, h3, h4 {
+			color: $color-tertiary;
+		}
+		.banner__content {
+			background: $color-tertiary;
+		}
+		.banner__overlay {
+			.stop-1 {
+				color: #C8582D;
+			}
+			.stop-2 {
+				color: #B93C32;
+			}
+		}
+	}
+}

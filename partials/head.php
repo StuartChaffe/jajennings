@@ -7,6 +7,9 @@
 <title><?php wp_title(''); ?></title>
 <?php wp_head(); ?>
 </head>
+
+
+
 <body <?php body_class(); ?>>
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
 <?php include get_theme_file_path('icons/sprite.php'); ?>

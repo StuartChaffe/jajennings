@@ -1,0 +1,19 @@
+.cta {
+	margin: $spacing 0;
+	position: relative;
+	padding-right: 1.5rem;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.icon--arrow {
+		position: absolute;
+		display: inline-flex;
+		right: 0;
+		bottom: 0;
+		color: $color-primary;
+		transform: translateY(-5px);
+	}
+}

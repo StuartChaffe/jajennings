@@ -3,23 +3,23 @@
 		<div class="global-footer__content">
 			<div class="global-footer__content-top">
 				<div class="global-footer__content-top--contact">
-				<?php if(get_field('company_tel', 'options')): ?>
+				<?php if(get_field('company_tel', 'options')) { ?>
 					<p>Telephone:<br />
-					<?php the_field('company_tel', 'options'); ?></p>
-				<?php endif; ?>
-				<?php if(get_field('company_fax', 'options')): ?>
+					<?php the_field('company_tel', 'options') ?></p>
+				<?php } ?>
+				<?php if(get_field('company_fax', 'options')) { ?>
 					<p>Fax:<br />
-					<?php the_field('company_fax', 'options'); ?></p>
-				<?php endif; ?>
-				<?php if(get_field('company_email', 'options')): ?>
+					<?php the_field('company_fax', 'options') ?></p>
+				<?php } ?>
+				<?php if(get_field('company_email', 'options')) { ?>
 					<p>Email:<br />
-					<?php the_field('company_email', 'options'); ?></p>
-				<?php endif; ?>
+					<?php the_field('company_email', 'options') ?></p>
+				<?php } ?>
 				</div>
 				<div class="global-footer__content-top--address">
-				<?php if(get_field('company_address', 'options')): ?>
+				<?php if(get_field('company_address', 'options')) { ?>
 					<?php the_field('company_address', 'options'); ?>
-				<?php endif; ?>
+				<?php } ?>
 				</div>
 
 				<div class="global-footer__content-top--nav">
