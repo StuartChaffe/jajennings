@@ -1,6 +1,6 @@
 {
     "key": "group_5e7ceee33359f",
-    "title": "Theme Settings",
+    "title": "Alert",
     "fields": [
         {
             "key": "field_5e7cef9143a37",
@@ -64,7 +64,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1585246955
+    "modified": 1614892650
 }

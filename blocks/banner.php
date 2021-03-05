@@ -35,17 +35,17 @@ $backgroundmobile = get_field( 'banner-background-mobile');
 			<path data-name="Union 1" d="M154,618,309,463V618ZM309,309H464L309,464ZM0,464V309H154L309,154V309H155V464ZM0,155V0H155V155Z" fill="url(#linear-gradient)"/>
 		</svg>
 	</div>
-	<?php if ( $title ) : ?>
-		<?php if ( $title['banner-title-link'] ) : ?>
-		<a class="banner__content banner__content--link" href="<?php echo $title['banner-title-link']; ?>">
-		<?php else: ?>
+	<?php if ( $title ) { ?>
+		<?php if ( $title['banner-title-link'] ) { ?>
+		<a class="banner__content banner__content-link" href="<?php echo $title['banner-title-link']; ?>">
+		<?php } else { ?>
 		<div class="banner__content">
-		<?php endif; ?>
+		<?php } ?>
 			<h1><?php echo $title['banner-title-text']; ?></h1>
-		<?php if ( $title['banner-title-link'] ) : ?> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+		<?php if ( $title['banner-title-link'] ) { ?> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 			</a>
-		<?php else: ?>
+			<?php } else { ?>
 		</div>
-		<?php endif; ?>
-	<?php endif; ?>
+		<?php } ?>
+	<?php } ?>
 </div>

@@ -63,3 +63,20 @@ add_theme_support( 'editor-color-palette', array(
 add_theme_support( 'editor-styles' );
 add_editor_style( 'dist/editor-style.css' );
 
+/**
+ * Removes P tags from around images and iframes
+ * Original source: https://interconnectit.com/blog/2011/06/16/how-to-remove-p-tags-from-images-in-wordpress/
+ * @param  [type] $pee [description]
+ * @return [type]      [description]
+ */
+function img_unautop($pee) {
+    // commented out example shows how you can wrap your IMG tag in a div if you like
+     /* $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', $pee); */
+     //strip P tag and just return the image
+     $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '$1', $pee);
+     //strip P tag and just return the iFrame
+     $pee = preg_replace('/<p>\s*(<iframe .*>*.<\/iframe>)\s*<\/p>/iU', '\1', $pee);
+     return $pee;
+ }
+ add_filter( 'acf_the_content', 'img_unautop', 30 ); //only use this one if you have ACF content
+ add_filter( 'the_content', 'img_unautop', 30 ); //regular content for POSTS and PAGES

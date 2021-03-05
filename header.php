@@ -6,7 +6,7 @@
 <div class="global-container">
 
 <header class="global-header">
-	<h1 class="global-header--logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="JA Jennings Logo" /></a></h1>
+	<a class="global-header--logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="JA Jennings Logo" /></a>
 
 	<nav class="global-header--nav"><?php wp_nav_menu( array('theme_location' => 'primary') ); ?></nav>
 
@@ -20,6 +20,6 @@
 
 <?php if(get_field('alert', 'options')): ?>
 <div class="global-alert">
-	<?php the_field('alert_text', 'options'); ?>  <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+	<?php the_field('alert_text', 'options'); ?>
 </div>
 <?php endif; ?>

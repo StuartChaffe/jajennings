@@ -1,20 +1,24 @@
 <footer class="global-footer">
-	<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+	<?php if(get_field('company_tel', 'options')): ?>
+		<p>Tel</p>
+		<p><?php the_field('company_tel', 'options'); ?></p>
+	<?php endif; ?>
+	<?php if(get_field('company_fax', 'options')): ?>
+		<p>Fax</p>
+		<p><?php the_field('company_fax', 'options'); ?></p>
+	<?php endif; ?>
+	<?php if(get_field('company_email', 'options')): ?>
+		<p>Email</p>
+		<p><?php the_field('company_email', 'options'); ?></p>
+	<?php endif; ?>
+	<?php if(get_field('company_address', 'options')): ?>
+		<?php the_field('company_address', 'options'); ?>
+	<?php endif; ?>
 
-	<ul class="social-links">
-	<?php if(get_field('twitter', 'options')): ?>
-		<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
-	<?php endif; ?>
-	<?php if(get_field('facebook', 'options')): ?>
-		<li class="social-links__item"><a href="<?php the_field('facebook', 'options'); ?>" class="social-links__link"><?php echo get_icon('facebook'); ?></a></li>
-	<?php endif; ?>
-	<?php if(get_field('instagram', 'options')): ?>
-		<li class="social-links__item"><a href="<?php the_field('instagram', 'options'); ?>" class="social-links__link"><?php echo get_icon('instagram'); ?></a></li>
-	<?php endif; ?>
-	<?php if(get_field('youtube', 'options')): ?>
-		<li class="social-links__item"><a href="<?php the_field('youtube', 'options'); ?>" class="social-links__link"><?php echo get_icon('youtube'); ?></a></li>
-	<?php endif; ?>
-	</ul>
+	<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
+
+	<p>&copy; <?php echo date('Y'); ?>J.A. Jennings, Inc. All rights reserved.</p>
+	<?php wp_nav_menu( array('theme_location' => 'policy') ); ?>
 </footer>
 
 </div>

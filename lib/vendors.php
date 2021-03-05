@@ -5,20 +5,20 @@
  */
 
 function origin_acf_op_init() {
-    if( function_exists('acf_add_options_page') ) {
+	if( function_exists('acf_add_options_page') ) {
 
-        $parent = acf_add_options_page(array(
-            'page_title'  => __('Theme General Settings'),
-            'menu_title'  => __('Theme Settings'),
-            'redirect'    => false,
-        ));
+		$parent = acf_add_options_page(array(
+			'page_title'  => __('Theme General Settings'),
+			'menu_title'  => __('Theme Settings'),
+			'redirect'    => false,
+		));
 
-        $child = acf_add_options_page(array(
-            'page_title'  => __('Social Settings'),
-            'menu_title'  => __('Social'),
-            'parent_slug' => $parent['menu_slug'],
-        ));
-    }
+		$child = acf_add_options_page(array(
+			'page_title'  => __('Company Settings'),
+			'menu_title'  => __('Company'),
+			'parent_slug' => $parent['menu_slug'],
+		));
+	}
 }
 
 add_action('acf/init', 'origin_acf_op_init');

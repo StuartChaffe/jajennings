@@ -1,6 +1,4 @@
 jQuery(document).ready(function($) {
-
-	console.log("Testing");
 	// Primary nav
 	var $menuBtn = $(".global-header--nav-btn");
 	var $menuContainer = $(".global-header--nav__mobile");

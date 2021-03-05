@@ -10,8 +10,6 @@
 	position: sticky;
 	top: 0;
 	z-index: 9;
-	padding-left: 30px;
-	// padding: 10px 0 0 0;
 
 	@include mq(medium) {
 		position: relative;
@@ -20,25 +18,24 @@
 	&--logo {
 		width: 175px;
 		margin: 0;
+		margin-left: 2rem;
+		padding: 30px 0;
+
+		@include mq(medium) {
+			padding: 0;
+		}
 	}
 
 	&--nav {
 		display: none;
 		@include mq(medium) {
-			margin-top: 1rem;
-			// padding-right: 30px;
+			margin-top: 2rem;
 			display: flex;
 			align-items: center;
 		}
 
 		> div {
 			height: 100%;
-		}
-
-		.menu {
-			li a {
-				padding: 1.5rem 1.5rem;
-			}
 		}
 		ul {
 			padding-left: 0;
@@ -52,18 +49,16 @@
 				background-color: transparent; 
 				position: absolute;
 				flex-direction: column;
-				width: 100%;
+				width: 80%;
 				left: 0;
 				top: 100%;
-				transition: .1s all ease-in-out;
+				transition: .3s all ease-in-out;
 
 				li {
 					padding: 0 1.5rem;
 				}
 				li > a {
 					padding: 1rem 0;
-					// padding-top: 1rem;
-					// padding-bottom: 1rem;
 					width: 100%;
 					color: white;
 					border-bottom: 1px solid white;
@@ -77,35 +72,48 @@
 					}
 				}
 			}
+			.current_page_item {
+				a {
+					color: lighten($color-primary, 10%);
+				}
+			}
 
 			li {
 				display: flex;
 				height: 100%;
 				&:hover {
-					a {
+					> a {
 						background-color: $color-primary; 
 						color: white;
 					}
 					.sub-menu {
-						display: flex;
-						visibility: visible;
-						opacity: 1;
-						background-color: $color-primary; 
-						transition: .1s all opacity ease-in-out;
+						display: none;
+						@include mq(medium) {
+							display: flex;
+							visibility: visible;
+							opacity: 1;
+							background-color: $color-primary; 
+							width: 100%;
+							transition: .3s all ease-in-out;
+						}
+
+						a {
+							background-color: transparent; 
+						}
 					}
 				}
 				a {
-					// align-items: center;
 					display: flex;
 					color: $color-text-base;
 					font-size: $font-size-base;
 					height: 100%;
-					transition: .1s background-color ease-in-out, .1s color ease-in-out;
-					&:hover {
+					transition: .3s background-color ease-in-out, .3s color ease-in-out;
+					padding: 1.5rem 1.5rem;
+					&:hover, &:focus {
 						color: white;
 						text-decoration: none;
 						background: $color-primary;
-						transition: .1s background-color ease-in-out, .1s color ease-in-out;
+						transition: .3s background-color ease-in-out, .3s color ease-in-out;
 					}
 				}
 				&:last-child {
@@ -129,20 +137,19 @@
 			right: 0;
 			top: 0;
 			padding: 0 1.5rem;
-			transition: .1s background-color ease-in-out;
+			transition: .3s background-color ease-in-out;
 			@include mq(medium) {
 				display: none;
 			}
 		}
 		.is-active {
 			background-color: $color-primary;
-			transition: .1s background-color ease-in-out;
+			transition: .3s background-color ease-in-out;
 		}
 
 		&__mobile {
 			position: fixed;
-			// padding: 50px;
-			padding-top: 105px;
+			padding-top: 100px;
 			right: -100%;
 			top: 0;
 			width: 100%;
@@ -158,17 +165,30 @@
 				display: flex;
 				flex-direction: column;
 				background: $color-primary;
+				padding: 0.5rem 1.5rem;
 				li {
-					line-height: 3rem;
-					text-align: center;
 					a {
-						padding: 0;
-						font-size: 1.5rem;
+						padding: 1rem 0;
+						width: 100%;
+						color: white;
+						font-size: $font-size-base;
+						border-bottom: 1px solid white;
+
+						&:after {
+							content: url("../src/icons/arrow-white.svg");
+							position: absolute;
+							right: 1.75rem;
+							width: 13px;
+							height: 10px;
+						}
 					}
 				}
 			}
 		}
 	}
+}
+.menu-active {
+	overflow: hidden;
 }
 .global-header--nav__mobile.is-active {
 	transform: translateX(-100%);
@@ -228,13 +248,13 @@
 }
 
 .global-header--nav-inner {
-	transition-duration: 0.2s;
+	transition-duration: .3s;
 	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 .global-header--nav-inner::before,
 .global-header--nav-inner::after {
 	transition-duration: 0s;
-	transition-delay: 0.1s;
+	transition-delay: 0s;
 	transition-timing-function: linear;
 }
 .global-header--nav-inner::before {

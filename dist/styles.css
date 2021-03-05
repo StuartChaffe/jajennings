@@ -352,9 +352,19 @@ table tbody tr:hover {
 }
 .global-alert a {
   color: #000;
+  display: flex;
+  align-items: center;
+}
+.global-alert a:hover {
+  text-decoration: none;
+}
+.global-alert a:hover .icon {
+  transition: 0.2s transform ease-in-out;
+  transform: translateX(0.5rem);
 }
 .global-alert .icon {
   color: #000;
+  transition: 0.2s transform ease-in-out;
   margin-left: 0.5rem;
 }
 
@@ -428,10 +438,12 @@ table tbody tr:hover {
   transform: translate(-50%, -50%);
   margin: auto;
   min-width: 100%;
+  height: 100%;
 }
 .banner__image img {
   max-width: none;
   min-width: 100%;
+  min-height: 100%;
   width: auto;
 }
 .banner__overlay {
@@ -477,17 +489,24 @@ table tbody tr:hover {
   transform: translateY(-5px);
   transition: 0.2s margin-left ease-in-out;
 }
-.banner__content--link {
+.banner__content-link {
   transition: 0.2s background-color ease-in-out;
 }
-.banner__content--link:hover, .banner__content--link:focus {
+.banner__content-link:hover, .banner__content-link:focus {
   background-color: #513767;
   text-decoration: none;
   transition: 0.2s background-color ease-in-out;
 }
-.banner__content--link:hover .icon, .banner__content--link:focus .icon {
+.banner__content-link:hover .icon, .banner__content-link:focus .icon {
   margin-left: 1.5rem;
   transition: 0.2s margin-left ease-in-out;
+}
+
+.content > p, .content > h1, .content > h2, .content > h3, .content > h4, .content > h5 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
 }
 
 .content a {
@@ -573,7 +592,6 @@ table tbody tr:hover {
   position: sticky;
   top: 0;
   z-index: 9;
-  padding-left: 30px;
 }
 @media (min-width: 50em) {
   .global-header {
@@ -583,22 +601,26 @@ table tbody tr:hover {
 .global-header--logo {
   width: 175px;
   margin: 0;
+  margin-left: 2rem;
+  padding: 30px 0;
+}
+@media (min-width: 50em) {
+  .global-header--logo {
+    padding: 0;
+  }
 }
 .global-header--nav {
   display: none;
 }
 @media (min-width: 50em) {
   .global-header--nav {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
   }
 }
 .global-header--nav > div {
   height: 100%;
-}
-.global-header--nav .menu li a {
-  padding: 1.5rem 1.5rem;
 }
 .global-header--nav ul {
   padding-left: 0;
@@ -611,10 +633,10 @@ table tbody tr:hover {
   background-color: transparent;
   position: absolute;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   left: 0;
   top: 100%;
-  transition: 0.1s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .global-header--nav ul .sub-menu li {
   padding: 0 1.5rem;
@@ -632,33 +654,46 @@ table tbody tr:hover {
   width: 13px;
   height: 10px;
 }
+.global-header--nav ul .current_page_item a {
+  color: #785299;
+}
 .global-header--nav ul li {
   display: flex;
   height: 100%;
 }
-.global-header--nav ul li:hover a {
+.global-header--nav ul li:hover > a {
   background-color: #5E4078;
   color: white;
 }
 .global-header--nav ul li:hover .sub-menu {
-  display: flex;
-  visibility: visible;
-  opacity: 1;
-  background-color: #5E4078;
-  transition: 0.1s all opacity ease-in-out;
+  display: none;
+}
+@media (min-width: 50em) {
+  .global-header--nav ul li:hover .sub-menu {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    background-color: #5E4078;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+  }
+}
+.global-header--nav ul li:hover .sub-menu a {
+  background-color: transparent;
 }
 .global-header--nav ul li a {
   display: flex;
   color: #000;
   font-size: 1rem;
   height: 100%;
-  transition: 0.1s background-color ease-in-out, 0.1s color ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
+  padding: 1.5rem 1.5rem;
 }
-.global-header--nav ul li a:hover {
+.global-header--nav ul li a:hover, .global-header--nav ul li a:focus {
   color: white;
   text-decoration: none;
   background: #5E4078;
-  transition: 0.1s background-color ease-in-out, 0.1s color ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
 }
 .global-header--nav ul li:last-child a {
   border-bottom: 0;
@@ -675,7 +710,7 @@ table tbody tr:hover {
   right: 0;
   top: 0;
   padding: 0 1.5rem;
-  transition: 0.1s background-color ease-in-out;
+  transition: 0.3s background-color ease-in-out;
 }
 @media (min-width: 50em) {
   .global-header--nav-btn {
@@ -684,11 +719,11 @@ table tbody tr:hover {
 }
 .global-header--nav .is-active {
   background-color: #5E4078;
-  transition: 0.1s background-color ease-in-out;
+  transition: 0.3s background-color ease-in-out;
 }
 .global-header--nav__mobile {
   position: fixed;
-  padding-top: 105px;
+  padding-top: 100px;
   right: -100%;
   top: 0;
   width: 100%;
@@ -707,14 +742,25 @@ table tbody tr:hover {
   display: flex;
   flex-direction: column;
   background: #5E4078;
-}
-.global-header--nav__mobile ul li {
-  line-height: 3rem;
-  text-align: center;
+  padding: 0.5rem 1.5rem;
 }
 .global-header--nav__mobile ul li a {
-  padding: 0;
-  font-size: 1.5rem;
+  padding: 1rem 0;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  border-bottom: 1px solid white;
+}
+.global-header--nav__mobile ul li a:after {
+  content: url("../src/icons/arrow-white.svg");
+  position: absolute;
+  right: 1.75rem;
+  width: 13px;
+  height: 10px;
+}
+
+.menu-active {
+  overflow: hidden;
 }
 
 .global-header--nav__mobile.is-active {
@@ -780,14 +826,14 @@ table tbody tr:hover {
 }
 
 .global-header--nav-inner {
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .global-header--nav-inner::before,
 .global-header--nav-inner::after {
   transition-duration: 0s;
-  transition-delay: 0.1s;
+  transition-delay: 0s;
   transition-timing-function: linear;
 }
 
@@ -819,9 +865,10 @@ table tbody tr:hover {
 }
 
 .global-footer {
-  margin-top: auto;
+  margin-top: 100px;
   padding: 1rem 0;
   text-align: center;
+  background-color: #5E4078;
 }
 
 .social-links {

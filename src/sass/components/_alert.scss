@@ -11,9 +11,19 @@
 	padding: 0.5rem;
 	a {
 		color: $color-text-base;
+		display: flex;
+		align-items: center;
+		&:hover {
+			text-decoration: none;
+			.icon {
+				transition: .2s transform ease-in-out;
+				transform: translateX(0.5rem);
+			}
+		}
 	}
 	.icon {
 		color: $color-text-base;
+		transition: .2s transform ease-in-out;
 		margin-left: 0.5rem;
 	}
 }
