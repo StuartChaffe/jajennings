@@ -14,12 +14,14 @@ $size = get_field( 'textimage-size');
 	<?php while( have_rows('image') ): the_row();
 		$image = get_sub_field('textimage-image');
 		$position = get_sub_field('textimage-position');
-		$imagetitle = get_sub_field('textimage-title');
+		$imagetitle = get_sub_field('textimage-title', false, false);
 	?>
 	<div class="text-image__image <?php echo $position ?>">
 		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagetitle ) { ?>
-			<?php echo $imagetitle ?>
+			<div class="text-image__title">
+				<p class="h4"><?php echo $imagetitle ?></p>
+			</div>
 		<?php } ?>
 	</div>
 
@@ -37,42 +39,43 @@ $size = get_field( 'textimage-size');
 		$dropdown = get_sub_field('textimage-content-dropdown');
 	?>
 
-	<?php if ( $text ) { ?>
-		<?php echo $text ?>
-	<?php } ?>
-	
+		<?php if ( $text ) { ?>
+			<?php echo $text ?>
+		<?php } ?>
+			
 		<?php if( have_rows('textimage-content-links') ): ?>
-		<?php while( have_rows('textimage-content-links') ): the_row();
-			$title = get_sub_field('link-title');
-			$text = get_sub_field('link-text');
-			$link = get_sub_field('link-link');
-		?>
-			<a href="<?php echo $link ?>" class="text-image__content-link">
-			<?php if ( $title ) { ?>
-				<p><?php echo $title ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
-			<?php } ?>
-			<?php if ( $text ) { ?>
-				<p><?php echo $text ?></p>
-			<?php } ?>
-			</a>
-		<?php endwhile; ?>
+			<?php while( have_rows('textimage-content-links') ): the_row();
+				$title = get_sub_field('link-title');
+				$text = get_sub_field('link-text');
+				$link = get_sub_field('link-link');
+			?>
+				<a href="<?php echo $link ?>" class="text-image__content-link">
+				<?php if ( $title ) { ?>
+					<p><?php echo $title ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+				<?php } ?>
+				<?php if ( $text ) { ?>
+					<p><?php echo $text ?></p>
+				<?php } ?>
+				</a>
+			<?php endwhile; ?>
 		<?php endif; ?>
 
 		<?php if( have_rows('textimage-content-dropdown') ): ?>
-		<?php while( have_rows('textimage-content-dropdown') ): the_row();
-			$title = get_sub_field('dropdown-title');
-			$content = get_sub_field('dropdown-content');
-		?>
-			<?php if ( $title ) { ?>
-				<?php echo $title ?>
-			<?php } ?>
-			<?php if ( $content ) { ?>
-				<?php echo $content ?>
-			<?php } ?>
-		<?php endwhile; ?>
+			<ul class="accordion">
+			<?php while( have_rows('textimage-content-dropdown') ): the_row();
+				$title = get_sub_field('dropdown-title', false, false);
+				$content = get_sub_field('dropdown-content');
+			?>
+				<li>
+					<button class="accordion__title" aria-expanded="false"><?php echo $title ?> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg></button>
+					<div class="accordion__content">
+						<?php echo $content ?>
+					</div>
+				</li>
+			<?php endwhile; ?>
+			</ul>
 		<?php endif; ?>
-
-
+	
 	<?php endwhile; ?>
 	<?php endif; ?>
 

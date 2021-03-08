@@ -9,5 +9,7 @@ $content = get_field('content');
 ?>
 
 <div class="container">
-    <?php echo $content; ?>
+	<div class="content-block">
+		<?php echo $content; ?>
+	</div>
 </div>

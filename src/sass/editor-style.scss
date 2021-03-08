@@ -5,9 +5,7 @@
 
 @import "base/_generic";
 @import "base/_typography";
-@import "components/_banner";
-@import "components/_icons";
-
+@import "components/*.scss";
 @import "layout/_site";
 
 @import "blocks/*.scss";
@@ -24,4 +22,23 @@
 
 .edit-post-layout .interface-interface-skeleton__content {
 	background-color: white !important;
+}
+
+@import "utilities/_theme";
+
+.banner__overlay {
+	.stop-1 {
+		color: #5e4078;
+	}
+	.stop-2 {
+		color: #825c8a;
+	}
+}
+.banner__content {
+	background: $color-primary;
+	&-link {
+		&:hover, &:focus {
+			background-color: darken($color-primary, 5%);
+		}
+	}
 }

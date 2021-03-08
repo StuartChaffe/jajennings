@@ -9,6 +9,10 @@
 		margin-right: auto;
 		padding: 0 1.5rem;
 	}
+
+	&-block {
+		padding-bottom: $spacing;
+	}
 }
 
 .content {

@@ -1,15 +1,47 @@
 .text-image {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	@include mq(medium) {
 		flex-direction: row;
 	}
 	&__image {
-		width: 40%;
+		width: 100%;
+		position: relative;
+		@include mq(medium) {
+			width: 40%;
+		}
+
+		&--right {
+			order: 1;
+			@include mq(medium) {
+				order: 2;
+			}
+		}
+	}
+	&__title {
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		color: white;
+		padding: 1.5rem;
+		height: 50%;
+		display: flex;
+		align-items: flex-end;
 	}
 	&__content {
-		width: 60%;
-		padding: 1rem $spacing;
+		width: 100%;
+		padding: 1rem 1.5rem;
+		@include mq(medium) {
+			width: 60%;
+			padding: 1rem $spacing;
+		}
+		@include mq($until: medium) {
+			order: 1;
+		}
 		&-link {
 			position: relative;
 			width: 100%;
@@ -18,19 +50,16 @@
 			p {
 				margin: 0;
 				color: $color-text-base;
-				&:first-child {
-					color: $color-primary;
-				}
 			}
 			.icon {
 				position: absolute;
 				display: inline-flex;
 				right: 0;
 				top: 0;
-				color: $color-primary;
+				transition: .2s transform ease-in-out;
 				transform: translateY(5px);
 			}
-			&:hover {
+			&:hover, &:focus{
 				text-decoration: none;
 				color: inherit;
 				.icon {

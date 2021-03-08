@@ -27,6 +27,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_60460f73e8470",
+            "label": "Logo position",
+            "name": "banner-logo-position",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "banner__overlay--left": "Left",
+                "banner__overlay--right": "Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "Left",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_603f8826d4b47",
             "label": "Title",
             "name": "banner-title",
@@ -96,5 +120,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614949190
+    "modified": 1615205162
 }

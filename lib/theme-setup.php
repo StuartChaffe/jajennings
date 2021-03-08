@@ -84,9 +84,45 @@ function img_unautop($pee) {
 /**
  * Add theme colour to body from ACF
 */
-function add_acf_body_class($class) {
-	$value = get_field('theme_colour');
-	$class[] = $value;
+// function jennings_body_class($class) {
+// 	if (get_field('theme_colour')) {
+// 		$value = get_field('theme_colour');
+// 		$class[] = $value;
+// 	}
+// 	return $class;
+// }
+// add_filter('body_class', 'jennings_body_class');
+
+// function origin_add_acf_editor_body_class($classes) {
+// 	global $post;
+// 	if (get_field('theme_colour', $post->ID)) {
+// 		$value = get_field('theme_colour', $post->ID);
+// 		$class[] = $value;
+// 	}
+// 	return $classes;
+// }
+// add_filter('admin_body_class', 'origin_add_acf_editor_body_class');
+
+
+function origin_add_acf_body_class($class) {
+	if (get_field('theme_colour')) {
+		$value = get_field('theme_colour');
+		$class[] = $value;
+	}
 	return $class;
 }
-add_filter('body_class', 'add_acf_body_class');
+add_filter('body_class', 'origin_add_acf_body_class');
+function origin_add_acf_editor_body_class($classes) {
+	global $post;
+	// var_dump(get_field('theme_colour', $post->ID));
+	// var_dump($post);
+	// die();
+	if (get_field('theme_colour', $post->ID)) {
+		$value = get_field('theme_colour', $post->ID);
+		$classes .= ' ' . $value;
+	}
+	return $classes;
+}
+add_filter('admin_body_class', 'origin_add_acf_editor_body_class');
+
+

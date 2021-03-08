@@ -46,13 +46,19 @@
 	&__overlay {
 		position: absolute;
 		top: 0;
-		left: 0;
 		height: 100%;
+		&--left {
+			left: 0;
+		}
+		&--right {
+			right: 0;
+			transform: rotate(180deg);
+		}
 	}
 
 	&__content {
 		z-index: 1;
-		background: $color-primary;
+		// background: $color-primary;
 		margin-left: auto;
 		width: 90%;
 		padding: 40px;
@@ -82,7 +88,7 @@
 		&-link {
 			transition: .2s background-color ease-in-out;
 			&:hover, &:focus {
-				background-color: darken($color-primary, 5%);
+				// background-color: darken($color-primary, 5%);
 				text-decoration: none;
 				transition: .2s background-color ease-in-out;
 

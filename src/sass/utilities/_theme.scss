@@ -5,6 +5,11 @@
 		}
 		.banner__content {
 			background: $color-primary;
+			&-link {
+				&:hover, &:focus {
+					background-color: darken($color-primary, 5%);
+				}
+			}
 		}
 		.banner__overlay {
 			.stop-1 {
@@ -14,6 +19,12 @@
 				color: #825c8a;
 			}
 		}
+		.icon--arrow,
+		.text-image__content-link p:first-child,
+		.accordion__title,
+		.accordion ul li:before  {
+			color: $color-primary;
+		}
 	}
 	&--blue {
 		h2, h3, h4 {
@@ -21,14 +32,26 @@
 		}
 		.banner__content {
 			background: $color-secondary;
+			&-link {
+				&:hover, &:focus {
+					background-color: darken($color-secondary, 5%);
+				}
+			}
 		}
 		.banner__overlay {
 			.stop-1 {
-				color: #C8582D;
+				color: #4882AC;
 			}
 			.stop-2 {
-				color: #B93C32;
+				color: #465F8C;
 			}
+		}
+
+		.icon--arrow,
+		.text-image__content-link p:first-child,
+		.accordion__title,
+		.accordion ul li:before {
+			color: $color-secondary;
 		}
 	}
 	&--red {
@@ -37,6 +60,11 @@
 		}
 		.banner__content {
 			background: $color-tertiary;
+			&-link {
+				&:hover, &:focus {
+					background-color: darken($color-tertiary, 5%);
+				}
+			}
 		}
 		.banner__overlay {
 			.stop-1 {
@@ -45,6 +73,12 @@
 			.stop-2 {
 				color: #B93C32;
 			}
+		}
+		.icon--arrow,
+		.text-image__content-link p:first-child,
+		.accordion__title,
+		.accordion ul li:before  {
+			color: $color-tertiary;
 		}
 	}
 }

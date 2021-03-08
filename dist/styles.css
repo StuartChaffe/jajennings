@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colours */
 /* Typography */
 .theme--purple h2, .theme--purple h3, .theme--purple h4 {
@@ -6,11 +7,20 @@
 .theme--purple .banner__content {
   background: #5E4078;
 }
+.theme--purple .banner__content-link:hover, .theme--purple .banner__content-link:focus {
+  background-color: #513767;
+}
 .theme--purple .banner__overlay .stop-1 {
   color: #5e4078;
 }
 .theme--purple .banner__overlay .stop-2 {
   color: #825c8a;
+}
+.theme--purple .icon--arrow,
+.theme--purple .text-image__content-link p:first-child,
+.theme--purple .accordion__title,
+.theme--purple .accordion ul li:before {
+  color: #5E4078;
 }
 .theme--blue h2, .theme--blue h3, .theme--blue h4 {
   color: #4882AC;
@@ -18,11 +28,20 @@
 .theme--blue .banner__content {
   background: #4882AC;
 }
+.theme--blue .banner__content-link:hover, .theme--blue .banner__content-link:focus {
+  background-color: #40749a;
+}
 .theme--blue .banner__overlay .stop-1 {
-  color: #C8582D;
+  color: #4882AC;
 }
 .theme--blue .banner__overlay .stop-2 {
-  color: #B93C32;
+  color: #465F8C;
+}
+.theme--blue .icon--arrow,
+.theme--blue .text-image__content-link p:first-child,
+.theme--blue .accordion__title,
+.theme--blue .accordion ul li:before {
+  color: #4882AC;
 }
 .theme--red h2, .theme--red h3, .theme--red h4 {
   color: #B93C32;
@@ -30,10 +49,19 @@
 .theme--red .banner__content {
   background: #B93C32;
 }
+.theme--red .banner__content-link:hover, .theme--red .banner__content-link:focus {
+  background-color: #a5352d;
+}
 .theme--red .banner__overlay .stop-1 {
   color: #C8582D;
 }
 .theme--red .banner__overlay .stop-2 {
+  color: #B93C32;
+}
+.theme--red .icon--arrow,
+.theme--red .text-image__content-link p:first-child,
+.theme--red .accordion__title,
+.theme--red .accordion ul li:before {
   color: #B93C32;
 }
 
@@ -126,7 +154,7 @@ html, body {
 body {
   background-color: #F7F7F7;
   color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: calc(16px + 0.3vw);
   line-height: 1.25;
   font-weight: 300;
@@ -162,6 +190,9 @@ p {
   margin-bottom: 1.4em;
   margin-top: 0;
   font-size: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
 p.lead {
@@ -379,6 +410,70 @@ table tbody tr:hover {
   background: #ddd;
 }
 
+.hide {
+  display: none;
+}
+
+.accordion {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0;
+  list-style: none;
+}
+.accordion > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.accordion > li button {
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: left;
+}
+.accordion__title {
+  font-size: 1rem;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 1rem 2rem 1rem 0;
+  width: 100%;
+}
+.accordion__title .icon--arrow {
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  top: 1.6rem;
+  transform: translateY(-50%);
+  transition: 0.2s all ease-in-out;
+}
+.accordion__title:hover {
+  cursor: pointer;
+}
+.accordion .active .icon--arrow {
+  transform: translateY(-6px) rotate(90deg);
+  transition: 0.2s all ease-in-out;
+}
+.accordion ul {
+  padding-left: 1.5rem;
+}
+.accordion ul li {
+  color: #000;
+  font-size: 1rem;
+}
+.accordion ul li:before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+}
+.accordion__content {
+  padding-bottom: 1rem;
+}
+.accordion__content ul li {
+  margin-bottom: 1rem;
+}
+
 .global-alert {
   display: flex;
   align-items: center;
@@ -492,12 +587,17 @@ table tbody tr:hover {
 .banner__overlay {
   position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
+}
+.banner__overlay--left {
+  left: 0;
+}
+.banner__overlay--right {
+  right: 0;
+  transform: rotate(180deg);
 }
 .banner__content {
   z-index: 1;
-  background: #5E4078;
   margin-left: auto;
   width: 90%;
   padding: 40px;
@@ -530,7 +630,6 @@ table tbody tr:hover {
   transition: 0.2s background-color ease-in-out;
 }
 .banner__content-link:hover, .banner__content-link:focus {
-  background-color: #513767;
   text-decoration: none;
   transition: 0.2s background-color ease-in-out;
 }
@@ -544,6 +643,9 @@ table tbody tr:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
+}
+.content-block {
+  padding-bottom: 100px;
 }
 
 .content abbr {
@@ -630,6 +732,7 @@ table tbody tr:hover {
 .text-image {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 @media (min-width: 50em) {
   .text-image {
@@ -637,11 +740,49 @@ table tbody tr:hover {
   }
 }
 .text-image__image {
-  width: 40%;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 50em) {
+  .text-image__image {
+    width: 40%;
+  }
+}
+.text-image__image--right {
+  order: 1;
+}
+@media (min-width: 50em) {
+  .text-image__image--right {
+    order: 2;
+  }
+}
+.text-image__title {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 1.5rem;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
 }
 .text-image__content {
-  width: 60%;
-  padding: 1rem 100px;
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+@media (min-width: 50em) {
+  .text-image__content {
+    width: 60%;
+    padding: 1rem 100px;
+  }
+}
+@media (max-width: 49.99em) {
+  .text-image__content {
+    order: 1;
+  }
 }
 .text-image__content-link {
   position: relative;
@@ -653,22 +794,19 @@ table tbody tr:hover {
   margin: 0;
   color: #000;
 }
-.text-image__content-link p:first-child {
-  color: #5E4078;
-}
 .text-image__content-link .icon {
   position: absolute;
   display: inline-flex;
   right: 0;
   top: 0;
-  color: #5E4078;
+  transition: 0.2s transform ease-in-out;
   transform: translateY(5px);
 }
-.text-image__content-link:hover {
+.text-image__content-link:hover, .text-image__content-link:focus {
   text-decoration: none;
   color: inherit;
 }
-.text-image__content-link:hover .icon {
+.text-image__content-link:hover .icon, .text-image__content-link:focus .icon {
   transition: 0.2s transform ease-in-out;
   transform: translate(0.5rem, 5px);
 }
