@@ -20,6 +20,20 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 .alignleft          { float: left; }
 .aligncenter        { display: block; margin-left: auto; margin-right: auto; }
 
+// Show and hide
+.hidemobile {
+	@include mq($until: medium) {
+		display: none !important;
+	}
+}
+
+.hidedesktop {
+	@include mq(medium) {
+		display: none !important;
+	}
+}
+
+
 // debugging
 @if $debug == true {
     * {

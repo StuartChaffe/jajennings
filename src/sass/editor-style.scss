@@ -5,27 +5,16 @@
 
 @import "base/_generic";
 @import "base/_typography";
+@import "utilities/_theme";
 @import "components/*.scss";
 @import "layout/_site";
 
 @import "blocks/*.scss";
 
-.editor-styles-wrapper {
-	background-color: white !important;
-	height: auto !important;
+body {
+	background-color: rgba(255,255,255,1) !important;
+	background: rgba(255,255,255,1) !important;
 }
-.editor-styles-wrapper, .editor-styles-wrapper {
-	background-color: white !important;
-	height: auto !important;
-}
-
-
-.edit-post-layout .interface-interface-skeleton__content {
-	background-color: white !important;
-}
-
-@import "utilities/_theme";
-
 .banner__overlay {
 	.stop-1 {
 		color: #5e4078;
@@ -41,4 +30,22 @@
 			background-color: darken($color-primary, 5%);
 		}
 	}
+}
+.accordion__title,
+.accordion__content {
+	ul {
+		margin-left: 0 !important;
+		li {
+			list-style-type: none !important;
+		}
+	}
+}
+.editor-styles-wrapper ul {
+	margin-left: 0 !important;
+}
+.accordion__content {
+	display: none;
+}
+.editor-styles-wrapper .wp-block {
+	max-width: 1200px !important;
 }
