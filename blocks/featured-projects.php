@@ -27,15 +27,18 @@ $title = get_field( 'featured-projects-title' );
 				<img class="hidemobile" src="<?php echo $image['project-image-featured']['url']; ?>" alt="<?php echo $image['project-image-featured']['alt']; ?>" />
 				<img class="hidedesktop" src="<?php echo $image['project-image-mobile']['url']; ?>" alt="<?php echo $image['project-image-mobile']['alt']; ?>" />
 			</div>
-			<a class="projects-item__content" href="<?php the_permalink($project); ?>">
-				<h3><?php echo $title ?></h3>
-				<?php
-					foreach ( $terms as $term ) {
-					echo '<p>' .$term->name . '</p>';
-				} ?>
-				<svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
-			</a>
 		</div>
+		<a class="projects-item__link" href="<?php the_permalink($project); ?>">
+
+			<div class="projects-item__content">
+			<h3><?php echo $title ?></h3>
+			<?php
+				foreach ( $terms as $term ) {
+				echo '<p>' .$term->name . '</p>';
+			} ?>
+			<svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+			</div>
+		</a>
 		<?php endforeach; ?>
 	<?php wp_reset_postdata(); ?>
 	<?php } ?>

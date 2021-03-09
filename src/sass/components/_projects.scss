@@ -1,7 +1,13 @@
 .projects {
+	margin-bottom: $spacing;
 	&-item {
 		display: flex;
 		flex-direction: column;
+		position: relative;
+		margin-top: $spacing;
+		&:first-child {
+			margin-top: 0;
+		}
 		&__image {
 			height: 400px;
 			overflow: hidden;
@@ -19,10 +25,11 @@
 				transform: translate(-50%,-50%);
 			}
 		}
-		&__content {
+		&__link {
+			position: absolute;
 			z-index: 1;
 			background: $color-secondary;
-			margin-left: auto;
+			right: 0;
 			width: 90%;
 			padding: 30px;
 			transform: translateY(-50%);
@@ -30,8 +37,25 @@
 			transition: .2s background-color ease-in-out;
 
 			@include mq(medium) {
-				width: 60%;
-				padding: 20px 80px 30px 30px;
+				width: 50%;
+				padding: 20px 30px 30px 30px;
+			}
+			
+			&:hover, &:focus {
+				text-decoration: none;
+				background-color: darken($color-secondary, 5%);
+				transition: .2s background-color ease-in-out;
+				color: white;
+				.icon {
+					transform: translate(0.5rem, -5px);
+					transition: .2s transform ease-in-out;
+				}
+			}
+		}
+		&__content {
+			position: relative;
+			@include mq(medium) {
+				max-width: 545px;
 			}
 			p {
 				margin-bottom: 0;
@@ -49,20 +73,10 @@
 				display: flex;
 				position: absolute;
 				right: 30px;
-				bottom: 30px;
+				bottom: 0px;
 				transform: translateY(-5px);
 				transition: .2s transform ease-in-out;
 				color: white;
-			}
-			&:hover, &:focus {
-				text-decoration: none;
-				background-color: darken($color-secondary, 5%);
-				transition: .2s background-color ease-in-out;
-				color: white;
-				.icon {
-					transform: translate(0.5rem, -5px);
-					transition: .2s transform ease-in-out;
-				}
 			}
 		}
 	}

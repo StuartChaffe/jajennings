@@ -497,8 +497,11 @@ dd {
   display: inline-flex;
   right: 0;
   bottom: 0;
-  color: #5E4078;
   transform: translateY(-5px);
+}
+
+.gallery {
+  margin-top: 100px;
 }
 
 .icon {
@@ -523,6 +526,89 @@ dd {
 .icon--large {
   width: 32px;
   height: 32px;
+}
+
+.projects {
+  margin-bottom: 100px;
+}
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+}
+.projects-item:first-child {
+  margin-top: 0;
+}
+.projects-item__image {
+  height: 400px;
+  overflow: hidden;
+  background: #ddd;
+  position: relative;
+}
+.projects-item__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.projects-item__link {
+  position: absolute;
+  z-index: 1;
+  background: #4882AC;
+  right: 0;
+  width: 90%;
+  padding: 30px;
+  transform: translateY(-50%);
+  color: white;
+  transition: 0.2s background-color ease-in-out;
+}
+@media (min-width: 50em) {
+  .projects-item__link {
+    width: 50%;
+    padding: 20px 30px 30px 30px;
+  }
+}
+.projects-item__link:hover, .projects-item__link:focus {
+  text-decoration: none;
+  background-color: #40749a;
+  transition: 0.2s background-color ease-in-out;
+  color: white;
+}
+.projects-item__link:hover .icon, .projects-item__link:focus .icon {
+  transform: translate(0.5rem, -5px);
+  transition: 0.2s transform ease-in-out;
+}
+.projects-item__content {
+  position: relative;
+}
+@media (min-width: 50em) {
+  .projects-item__content {
+    max-width: 545px;
+  }
+}
+.projects-item__content p {
+  margin-bottom: 0;
+}
+.projects-item__content h2, .projects-item__content h3, .projects-item__content h4 {
+  color: white;
+  margin: 0;
+  position: relative;
+  display: inline;
+}
+@media (max-width: 49.99em) {
+  .projects-item__content h2, .projects-item__content h3, .projects-item__content h4 {
+    font-size: 1.7rem;
+  }
+}
+.projects-item__content .icon {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  transform: translateY(-5px);
+  transition: 0.2s transform ease-in-out;
+  color: white;
 }
 
 .text-image {
@@ -613,6 +699,7 @@ dd {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #fff;
+  position: relative;
 }
 
 .container {

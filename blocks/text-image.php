@@ -26,8 +26,7 @@ $size = get_field( 'textimage-size');
 	</div>
 
 	<div class="text-image__content">
-
-
+		
 	<?php if ( $title ) { ?>
 		<h3><?php echo $title ?></h3>
 	<?php } ?>
