@@ -122,6 +122,7 @@
 // Remove margins if added together
 
 // .mb-0 + div,
+.text-image + footer,
 .container + footer {
 	margin-top: 0;
 }

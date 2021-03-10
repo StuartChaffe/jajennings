@@ -17,7 +17,7 @@ $title = get_field( 'featured-projects-title' );
 		<?php foreach( $projects as $project):
 			setup_postdata( $project );
 		?>
-		<div class="projects-item">
+		<a class="projects-item" href="<?php the_permalink($project); ?>">
 		<?php
 			$title = get_the_title($project);
 			$image = get_field( 'project-image', $project);
@@ -27,7 +27,7 @@ $title = get_field( 'featured-projects-title' );
 				<img class="hidemobile" src="<?php echo $image['project-image-featured']['url']; ?>" alt="<?php echo $image['project-image-featured']['alt']; ?>" />
 				<img class="hidedesktop" src="<?php echo $image['project-image-mobile']['url']; ?>" alt="<?php echo $image['project-image-mobile']['alt']; ?>" />
 			</div>
-		</div>
+		</a>
 		<a class="projects-item__link" href="<?php the_permalink($project); ?>">
 
 			<div class="projects-item__content">

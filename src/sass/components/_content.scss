@@ -11,7 +11,15 @@
 	}
 
 	&-block {
+		position: relative;
 		padding-bottom: $spacing;
+		&__label {
+			position: absolute;
+			display: flex;
+			right: 10%;
+			top: 1.5rem;
+			color: $color-primary;
+		}
 	}
 }
 

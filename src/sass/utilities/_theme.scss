@@ -23,7 +23,8 @@
 		.text-image__content-link p:first-child,
 		.accordion__title,
 		.accordion ul li:before,
-		.projects-details__header p  {
+		.projects-details__header p,
+		.content-block__label {
 			color: $color-primary;
 		}
 	}
@@ -58,7 +59,8 @@
 		.text-image__content-link p:first-child,
 		.accordion__title,
 		.accordion ul li:before,
-		.projects-details__header p {
+		.projects-details__header p,
+		.content-block__label {
 			color: $color-secondary;
 		}
 	}
@@ -92,7 +94,8 @@
 		.text-image__content-link p:first-child,
 		.accordion__title,
 		.accordion ul li:before,
-		.projects-details__header p  {
+		.projects-details__header p,
+		.content-block__label {
 			color: $color-tertiary;
 		}
 	}

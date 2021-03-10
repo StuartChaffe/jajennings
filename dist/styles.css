@@ -20,7 +20,8 @@
 .theme--purple .text-image__content-link p:first-child,
 .theme--purple .accordion__title,
 .theme--purple .accordion ul li:before,
-.theme--purple .projects-details__header p {
+.theme--purple .projects-details__header p,
+.theme--purple .content-block__label {
   color: #5E4078;
 }
 .theme--blue ::-moz-selection {
@@ -54,7 +55,8 @@
 .theme--blue .text-image__content-link p:first-child,
 .theme--blue .accordion__title,
 .theme--blue .accordion ul li:before,
-.theme--blue .projects-details__header p {
+.theme--blue .projects-details__header p,
+.theme--blue .content-block__label {
   color: #4882AC;
 }
 .theme--red ::-moz-selection {
@@ -88,7 +90,8 @@
 .theme--red .text-image__content-link p:first-child,
 .theme--red .accordion__title,
 .theme--red .accordion ul li:before,
-.theme--red .projects-details__header p {
+.theme--red .projects-details__header p,
+.theme--red .content-block__label {
   color: #B93C32;
 }
 
@@ -684,7 +687,15 @@ table tbody tr:hover {
   padding: 0 1.5rem;
 }
 .content-block {
+  position: relative;
   padding-bottom: 100px;
+}
+.content-block__label {
+  position: absolute;
+  display: flex;
+  right: 10%;
+  top: 1.5rem;
+  color: #5E4078;
 }
 
 .content abbr {
@@ -882,6 +893,18 @@ table tbody tr:hover {
 .projects-item:first-child {
   margin-top: 0;
 }
+.projects-item:hover .projects-item__image img {
+  transform: translate(-50%, -50%) scale(1.02, 1.02);
+  transition: 0.2s transform ease-in-out;
+}
+.projects-item:hover + .projects-item__link {
+  background-color: #40749a;
+  transition: 0.2s background-color ease-in-out;
+}
+.projects-item:hover + .projects-item__link .icon {
+  transform: translate(0.5rem, -5px);
+  transition: 0.2s transform ease-in-out;
+}
 .projects-item__image {
   height: 400px;
   overflow: hidden;
@@ -893,6 +916,7 @@ table tbody tr:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.2s transform ease-in-out;
 }
 .projects-item__link {
   position: absolute;
@@ -1500,6 +1524,7 @@ table tbody tr:hover {
   color: black;
 }
 
+.text-image + footer,
 .container + footer {
   margin-top: 0;
 }

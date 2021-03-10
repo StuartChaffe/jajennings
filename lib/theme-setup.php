@@ -124,5 +124,3 @@ function origin_add_acf_editor_body_class($classes) {
 	return $classes;
 }
 add_filter('admin_body_class', 'origin_add_acf_editor_body_class');
-
-
