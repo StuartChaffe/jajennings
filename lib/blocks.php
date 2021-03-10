@@ -83,6 +83,24 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'format-gallery',
 			'keywords'			=> array( 'images, image' )
 		));
+		acf_register_block(array(
+			'name'				=> 'project-details',
+			'title'				=> __('Project details'),
+			'description'		=> __('Add project details'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'format-aside',
+			'keywords'			=> array( 'project, project details' )
+		));
+		acf_register_block(array(
+			'name'				=> 'pull-out',
+			'title'				=> __('Pull out'),
+			'description'		=> __('Add pull out'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'pull out' )
+		));
 	}
 }
 
@@ -105,6 +123,8 @@ function jajennings_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-projects',
 		'acf/gallery',
 		'acf/images',
+		'acf/project-details',
+		'acf/pull-out',
 		'acf/text-image',
 	);
  

@@ -69,6 +69,7 @@
 						right: 1.75rem;
 						width: 13px;
 						height: 10px;
+						transition: .2s transform ease-in-out;
 					}
 				}
 			}
@@ -99,6 +100,12 @@
 
 						a {
 							background-color: transparent; 
+							&:hover {
+								&:after {
+									transform: translateX(0.5rem);
+									transition: .2s transform ease-in-out;
+								}
+							}
 						}
 					}
 				}

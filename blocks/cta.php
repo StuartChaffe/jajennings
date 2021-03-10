@@ -15,7 +15,7 @@ $text = get_field('cta-text');
 		<h2><?php echo $title; ?></h2>
 	<?php } ?>
 	<?php if ( $text ) { ?>
-		<p><?php echo $text; ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+		<?php echo $text; ?> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 	<?php } ?>
 	</div>
 </div>

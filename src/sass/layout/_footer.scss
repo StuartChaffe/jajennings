@@ -121,6 +121,7 @@
 
 // Remove margins if added together
 
-.cta + .global-footer {
+// .mb-0 + div,
+.container + footer {
 	margin-top: 0;
 }

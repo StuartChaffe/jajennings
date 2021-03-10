@@ -4,12 +4,12 @@
  *
  * @package _s
  */
-$title = get_field( 'textimage-title');
 $content = get_field( 'textimage-content');
 $code = get_field( 'textimage-code');
 $size = get_field( 'textimage-size');
+$id = get_field( 'textimage-id');
 ?>
-<div class="text-image">
+<div class="text-image" <?php if ( $id ) { ?>id="<?php echo $id ?>"<?php } ?>>
 <?php if( have_rows('image') ): ?>
 	<?php while( have_rows('image') ): the_row();
 		$image = get_sub_field('textimage-image');
@@ -26,11 +26,6 @@ $size = get_field( 'textimage-size');
 	</div>
 
 	<div class="text-image__content">
-		
-	<?php if ( $title ) { ?>
-		<h3><?php echo $title ?></h3>
-	<?php } ?>
-
 	<?php if( have_rows('textimage-content') ): ?>
 	<?php while( have_rows('textimage-content') ): the_row();
 		$text = get_sub_field('textimage-content-text');

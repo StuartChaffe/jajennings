@@ -15,8 +15,8 @@ $position = get_field('banner-logo-position');
 	<div class="banner-outer">
 	<?php if ( $image ) { ?>
 		<div class="banner__image">
-			<img class="hidemobile" src="<?php echo $image['banner-image-large']['url']; ?>" alt="<?php echo $image['banner-image-large']['alt']; ?>" />
-			<img class="hidedesktop" src="<?php echo $image['banner-image-mobile']['url']; ?>" alt="<?php echo $image['banner-image-large']['alt']; ?>" />
+			<img <?php if( $image['banner-image-mobile'] ) { ?><?php echo 'class="hidemobile"' ?><?php } ?> src="<?php echo $image['banner-image-large']['url']; ?>" alt="<?php echo $image['banner-image-large']['alt']; ?>" />
+			<?php if ( $image['banner-image-mobile'] ) { ?><img class="hidedesktop" src="<?php echo $image['banner-image-mobile']['url']; ?>" alt="<?php echo $image['banner-image-mobile']['alt']; ?>" /><?php } ?>
 		</div>
 	<?php } ?>
 		<svg class="banner__overlay <?php echo $position; ?>" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464 618">
