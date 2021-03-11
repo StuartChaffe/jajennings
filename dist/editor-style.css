@@ -612,6 +612,10 @@ dd {
 .cta p:last-child {
   margin-bottom: 0;
 }
+.cta--border {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+}
 .cta .icon--arrow {
   position: absolute;
   display: inline-flex;
@@ -692,6 +696,88 @@ dd {
 }
 .images-item img {
   width: 100%;
+}
+
+.next-project {
+  display: flex;
+}
+.next-project-container {
+  margin-top: 100px;
+}
+.next-project-item {
+  width: 60%;
+  margin-right: 0.5rem;
+}
+.next-project-item__content {
+  background: #4882AC;
+  color: white;
+  padding: 30px;
+  position: relative;
+  transition: 0.2s background-color ease-in-out;
+}
+.next-project-item__content h2, .next-project-item__content h3, .next-project-item__content h4 {
+  margin-bottom: 1rem;
+  color: white;
+}
+.next-project-item__content p {
+  margin: 0;
+}
+.next-project-item__content .icon {
+  display: flex;
+  position: absolute;
+  right: 15%;
+  bottom: 30px;
+  transform: translateY(-5px);
+  transition: 0.2s transform ease-in-out;
+  color: white;
+}
+.next-project-item:hover, .next-project-item:focus {
+  text-decoration: none;
+}
+.next-project-item:hover .next-project-item__content, .next-project-item:focus .next-project-item__content {
+  background-color: #40749a;
+  text-decoration: none;
+  transition: 0.2s background-color ease-in-out;
+}
+.next-project-item:hover .next-project-item__content .icon, .next-project-item:focus .next-project-item__content .icon {
+  transform: translate(0.5rem, -5px);
+  transition: 0.2s transform ease-in-out;
+}
+.next-project__all-projects {
+  display: flex;
+  width: 40%;
+  margin-left: 0.5rem;
+  background: #825C8A;
+  color: white;
+  padding: 30px 30px 20px 30px;
+  transition: 0.2s background-color ease-in-out;
+}
+.next-project__all-projects--link {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+.next-project__all-projects--link .icon {
+  display: inline;
+  margin-left: auto;
+  margin-right: 1.5rem;
+  transition: 0.2s margin-right ease-in-out;
+  color: white;
+}
+.next-project__all-projects:hover, .next-project__all-projects:focus {
+  background: #5E4078;
+  text-decoration: none;
+  transition: 0.2s background-color ease-in-out;
+}
+.next-project__all-projects:hover .icon, .next-project__all-projects:focus .icon {
+  margin-right: 1rem;
+  transition: 0.2s margin-right ease-in-out;
+}
+.next-project__all-projects h2, .next-project__all-projects h3, .next-project__all-projects h4 {
+  color: white;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .projects {
@@ -869,6 +955,7 @@ dd {
 }
 .pull-out-container {
   position: relative;
+  z-index: 1;
   display: flex;
   margin-top: -1rem;
 }
@@ -922,6 +1009,8 @@ dd {
 .text-image__content {
   width: 100%;
   padding: 1rem 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
 }
 @media (min-width: 50em) {
   .text-image__content {

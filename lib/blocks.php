@@ -55,7 +55,6 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'id',
 			'keywords'			=> array( 'text with image, text' )
 		));
-
 		acf_register_block(array(
 			'name'				=> 'featured-projects',
 			'title'				=> __('Featured projects'),
@@ -64,6 +63,15 @@ function jajennings_acf_blocks() {
 			'category'			=> 'jajennings-blocks',
 			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'project, featured projects' )
+		));
+		acf_register_block(array(
+			'name'				=> 'test',
+			'title'				=> __('Test'),
+			'description'		=> __('Add featured projects'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'screenoptions',
+			'keywords'			=> array( 'test, featured test' )
 		));
 		acf_register_block(array(
 			'name'				=> 'gallery',
@@ -101,6 +109,15 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'pull out' )
 		));
+		acf_register_block(array(
+			'name'				=> 'next-project',
+			'title'				=> __('Next project'),
+			'description'		=> __('Add next project link'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'category',
+			'keywords'			=> array( 'project, next project' )
+		));
 	}
 }
 
@@ -123,9 +140,11 @@ function jajennings_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-projects',
 		'acf/gallery',
 		'acf/images',
+		'acf/next-project',
 		'acf/project-details',
 		'acf/pull-out',
 		'acf/text-image',
+		'acf/test',
 	);
  
 }

@@ -1,0 +1,87 @@
+.next-project {
+	&-container {
+		margin-top: $spacing;
+	}
+	display: flex;
+	&-item {
+		width: 60%;
+		margin-right: 0.5rem;
+
+		&__content {
+			background: $color-secondary;
+			color: white;
+			padding: 30px;
+			position: relative;
+			transition: .2s background-color ease-in-out;
+			
+			h2, h3, h4 {
+				margin-bottom: 1rem;
+				color: white;
+			}
+			p {
+				margin: 0;
+			}
+			.icon {
+				display: flex;
+				position: absolute;
+				right: 15%;
+				bottom: 30px;
+				transform: translateY(-5px);
+				transition: .2s transform ease-in-out;
+				color: white;
+			}
+		}
+		&:hover, &:focus {
+			text-decoration: none;
+			.next-project-item__content {
+				background-color: darken($color-secondary, 5%);
+				text-decoration: none;
+				transition: .2s background-color ease-in-out;
+				.icon {
+					transform: translate(0.5rem, -5px);
+					transition: .2s transform ease-in-out;
+				}
+			}
+		}
+	}
+	&__all-projects {
+		display: flex;
+		width: 40%;
+		margin-left: 0.5rem;
+		background: $primary-light;
+		color: white;
+		padding: 30px 30px 20px 30px;
+		// height: 100%;
+		transition: .2s background-color ease-in-out;
+		
+		&--link {
+			display: flex;
+			align-items: center;
+			margin-top: auto;
+			width: 100%;
+			.icon {
+				display: inline;
+				margin-left: auto;
+				margin-right: 1.5rem;
+				transition: .2s margin-right ease-in-out;
+				color: white;
+			}
+		}
+
+		&:hover, &:focus {
+			background: $color-primary;
+			text-decoration: none;
+			transition: .2s background-color ease-in-out;
+			.icon {
+				margin-right: 1rem;
+				transition: .2s margin-right ease-in-out;
+			}
+		}
+
+		h2, h3, h4 {
+			color: white;
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+	}
+}
