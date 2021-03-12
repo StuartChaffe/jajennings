@@ -1,7 +1,27 @@
 {
     "key": "group_6047c56343c03",
     "title": "Gallery",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_604bb6cdb3131",
+            "label": "Content",
+            "name": "gallery-content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +39,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615316336
+    "modified": 1615574752
 }

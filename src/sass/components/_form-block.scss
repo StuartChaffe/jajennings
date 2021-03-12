@@ -1,6 +1,7 @@
 .form-block {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: $spacing;
 	@include mq(medium) {
 		flex-direction: row;
 	}

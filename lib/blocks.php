@@ -75,7 +75,7 @@ function jajennings_acf_blocks() {
 		));
 		acf_register_block(array(
 			'name'				=> 'gallery',
-			'title'				=> __('Gallery with projects'),
+			'title'				=> __('Gallery'),
 			'description'		=> __('Add a gallery block'),
 			'render_callback'	=> 'jajennings_acf_block_render_callback',
 			'category'			=> 'jajennings-blocks',
@@ -127,6 +127,15 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'email-alt',
 			'keywords'			=> array( 'email, form' )
 		));
+		acf_register_block(array(
+			'name'				=> 'map',
+			'title'				=> __('Map'),
+			'description'		=> __('Add a map'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'location-alt',
+			'keywords'			=> array( 'map, location' )
+		));
 	}
 }
 
@@ -150,11 +159,11 @@ function jajennings_allowed_block_types( $allowed_blocks ) {
 		'acf/form',
 		'acf/gallery',
 		'acf/images',
+		'acf/map',
 		'acf/next-project',
 		'acf/project-details',
 		'acf/pull-out',
 		'acf/text-image',
-		'acf/test',
 	);
  
 }

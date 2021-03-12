@@ -27,20 +27,40 @@ jQuery(document).ready(function($) {
 	});
 	$('.accordion .accordion__content').hide();
 
+	// IMAGE LOAD WAY
+	// init Isotope
+	// var $grid = $('.gallery').isotope({
+	// 	itemSelector: '.gallery-item',
+	// 	layoutMode: 'masonry',
+	// });
+	// layout Isotope after each image loads
+	// $grid.imagesLoaded().progress( function() {
+	// 	$grid.isotope('layout');
+		
+	// });
+
+
+	$('.gallery').isotope({
+		itemSelector: '.gallery-item',
+		layoutMode: 'masonry',
+		
+	 });
+
+	// init Isotope
+	var $grid = $('.gallery').isotope({
+		// options
+	});
+	// filter items on button click
+	$('.gallery__buttons').on( 'click', 'button', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+
+	// Lightbox
+	$('.modal').featherlightGallery({
+		previousIcon: '&#9664;',
+		nextIcon: '&#9654;',
+		galleryFadeIn: 300,
+		galleryFadeOut: 300
+	});
 });
-
-// const items = document.querySelectorAll(".accordion button");
-
-// function toggleAccordion() {
-//   const itemToggle = this.getAttribute('aria-expanded');
-  
-//   for (i = 0; i < items.length; i++) {
-//     items[i].setAttribute('aria-expanded', 'false');
-//   }
-  
-//   if (itemToggle == 'false') {
-//     this.setAttribute('aria-expanded', 'true');
-//   }
-// }
-
-// items.forEach(item => item.addEventListener('click', toggleAccordion));
