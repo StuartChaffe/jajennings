@@ -29,6 +29,10 @@
 		transition: .2s transform ease-in-out;
 		margin-left: 0.5rem;
 	}
+
+	+ .container {
+		margin-top: $spacing;
+	}
 }
 
 .global-alert p {

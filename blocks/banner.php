@@ -11,7 +11,7 @@ $text = get_sub_field('banner-title-text');
 $position = get_field('banner-logo-position');
 
 ?>
-<div class="banner">
+<div class="banner<?php if( $title['banner-title-text'] ) { ?> <?php echo 'banner-has-content' ?><?php } ?>">
 	<div class="banner-outer">
 	<?php if ( $image ) { ?>
 		<div class="banner__image">

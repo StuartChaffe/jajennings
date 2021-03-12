@@ -118,6 +118,15 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'category',
 			'keywords'			=> array( 'project, next project' )
 		));
+		acf_register_block(array(
+			'name'				=> 'form',
+			'title'				=> __('Form'),
+			'description'		=> __('Add a form'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'email-alt',
+			'keywords'			=> array( 'email, form' )
+		));
 	}
 }
 
@@ -138,6 +147,7 @@ function jajennings_allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		'acf/cta',
 		'acf/featured-projects',
+		'acf/form',
 		'acf/gallery',
 		'acf/images',
 		'acf/next-project',

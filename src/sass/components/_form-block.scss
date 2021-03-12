@@ -1,0 +1,30 @@
+.form-block {
+	display: flex;
+	flex-direction: column;
+	@include mq(medium) {
+		flex-direction: row;
+	}
+	&__form {
+		width: 100%;
+		h2, h3, h4, h5 {
+			margin-top: 0;
+		}
+	}
+}
+.form-block-has-content {
+	.form-block__content {
+		width: 100%;
+		margin-bottom: 2rem;
+		padding-right: 2rem;
+		@include mq(medium) {
+			width: 30%;
+			margin-bottom: 0;
+		}
+	}	
+	.form-block__form {
+		width: 100%;
+		@include mq(medium) {
+			width: 70%;
+		}
+	}
+}
