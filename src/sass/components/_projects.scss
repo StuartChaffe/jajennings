@@ -34,9 +34,25 @@
 			display: flex;
 			align-items: baseline;
 			justify-content: space-between;
+			flex-direction: column;
 			padding-right: 10%;
+
+			@include mq(medium) {
+				flex-direction: row;
+			}
 			h2 {
-				width: 75%
+				margin-bottom: 1rem;
+				width: 100%;
+				@include mq(medium) {
+					margin-bottom: 0;
+					width: 75%;
+				}
+			}
+			p {
+				margin-bottom: 1rem;
+				@include mq(medium) {
+					margin-bottom: 0;
+				}
 			}
 		}
 		&-item {
