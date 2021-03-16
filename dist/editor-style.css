@@ -1298,17 +1298,17 @@ html.with-featherlight {
   }
 }
 .projects-details__header h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   width: 100%;
 }
 @media (min-width: 50em) {
   .projects-details__header h2 {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     width: 75%;
   }
 }
 .projects-details__header p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 50em) {
   .projects-details__header p {
