@@ -11,9 +11,9 @@
 	top: 0;
 	z-index: 9;
 
-	@include mq(medium) {
-		position: relative;
-	}
+	// @include mq(medium) {
+	// 	position: relative;
+	// }
 
 	&--logo {
 		width: 175px;

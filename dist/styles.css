@@ -1783,11 +1783,6 @@ html.with-featherlight {
   top: 0;
   z-index: 9;
 }
-@media (min-width: 50em) {
-  .global-header {
-    position: relative;
-  }
-}
 .global-header--logo {
   width: 175px;
   margin: 0;
