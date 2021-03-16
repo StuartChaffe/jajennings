@@ -5,6 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title(''); ?></title>
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png"><!-- 32×32 -->
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.png"><!-- 180×180 -->
 <?php wp_head(); ?>
 </head>
 
