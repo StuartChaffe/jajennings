@@ -577,6 +577,9 @@ dd {
   top: 1.5rem;
   color: #5E4078;
 }
+.content-block__label + h2 {
+  margin-top: 0;
+}
 
 .content abbr {
   border-bottom: 1px dotted;

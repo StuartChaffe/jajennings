@@ -19,6 +19,9 @@
 			right: 10%;
 			top: 1.5rem;
 			color: $color-primary;
+			+ h2 {
+				margin-top: 0;
+			}
 		}
 	}
 }
