@@ -124,3 +124,10 @@ function origin_add_acf_editor_body_class($classes) {
 	return $classes;
 }
 add_filter('admin_body_class', 'origin_add_acf_editor_body_class');
+
+function post_remove ()
+{ 
+   remove_menu_page('edit.php');
+}
+
+add_action('admin_menu', 'post_remove');

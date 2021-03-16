@@ -5,10 +5,7 @@
 <?php
 	$image = get_field( 'project-image');
 ?>
-
-	<article>
-		<?php the_content(); ?>
-	</article>
+	<?php the_content(); ?>
 	
 <?php endwhile; ?>
 
