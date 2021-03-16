@@ -4,6 +4,9 @@
 		position: relative;
 		display: flex;
 	}
+	&__content{
+		margin-bottom: $spacing;
+	}
 	&-details {
 		background-color: $color-primary;
 		width: 90%;

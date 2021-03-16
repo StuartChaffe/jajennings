@@ -1493,6 +1493,9 @@ html.with-featherlight {
   position: relative;
   display: flex;
 }
+.projects__content {
+  margin-bottom: 100px;
+}
 .projects-details {
   background-color: #5E4078;
   width: 90%;

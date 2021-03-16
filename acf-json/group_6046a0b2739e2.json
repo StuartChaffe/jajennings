@@ -42,6 +42,25 @@
             "multiple": 1,
             "return_format": "id",
             "ui": 1
+        },
+        {
+            "key": "field_6050973404521",
+            "label": "Content",
+            "name": "featured-projects-content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -61,5 +80,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615302490
+    "modified": 1615894343
 }
