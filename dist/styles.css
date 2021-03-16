@@ -1742,6 +1742,9 @@ html.with-featherlight {
 .text-image__content h2 + p, .text-image__content h3 + p, .text-image__content h4 + p, .text-image__content h5 + p, .text-image__content h6 + p {
   margin-top: 2.5rem;
 }
+.text-image__content h2 + .text-image__content-link, .text-image__content h3 + .text-image__content-link, .text-image__content h4 + .text-image__content-link, .text-image__content h5 + .text-image__content-link, .text-image__content h6 + .text-image__content-link {
+  margin-top: 2rem;
+}
 .text-image__content-link {
   position: relative;
   width: 100%;
