@@ -1074,6 +1074,10 @@ table tbody tr:hover {
   z-index: -1;
 }
 
+.gallery + .cta {
+  margin-top: 0;
+}
+
 .icon {
   display: flex;
 }
