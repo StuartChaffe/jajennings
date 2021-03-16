@@ -1739,7 +1739,7 @@ html.with-featherlight {
   margin-bottom: 0;
   margin-top: 0;
 }
-.text-image__content h2 + h2, .text-image__content h2 + h3, .text-image__content h2 + h4, .text-image__content h2 + h5, .text-image__content h3 + h2, .text-image__content h3 + h3, .text-image__content h3 + h4, .text-image__content h3 + h5, .text-image__content h4 + h2, .text-image__content h4 + h3, .text-image__content h4 + h4, .text-image__content h4 + h5, .text-image__content h5 + h2, .text-image__content h5 + h3, .text-image__content h5 + h4, .text-image__content h5 + h5, .text-image__content h6 + h2, .text-image__content h6 + h3, .text-image__content h6 + h4, .text-image__content h6 + h5 {
+.text-image__content h2 + h2, .text-image__content h2 + h3, .text-image__content h2 + h4, .text-image__content h2 + h5, .text-image__content h2 + .accordion, .text-image__content h3 + h2, .text-image__content h3 + h3, .text-image__content h3 + h4, .text-image__content h3 + h5, .text-image__content h3 + .accordion, .text-image__content h4 + h2, .text-image__content h4 + h3, .text-image__content h4 + h4, .text-image__content h4 + h5, .text-image__content h4 + .accordion, .text-image__content h5 + h2, .text-image__content h5 + h3, .text-image__content h5 + h4, .text-image__content h5 + h5, .text-image__content h5 + .accordion, .text-image__content h6 + h2, .text-image__content h6 + h3, .text-image__content h6 + h4, .text-image__content h6 + h5, .text-image__content h6 + .accordion {
   margin-top: 2rem;
 }
 .text-image__content h2 + h6, .text-image__content h3 + h6, .text-image__content h4 + h6, .text-image__content h5 + h6, .text-image__content h6 + h6 {
