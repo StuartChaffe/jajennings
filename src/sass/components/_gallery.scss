@@ -1,5 +1,5 @@
 .gallery {
-	margin: 0 -0.5rem $spacing -0.5rem;
+	margin: 0 -0.5rem;
 	// &__content {
 	// 	margin-bottom: $spacing / 2;
 	// }
@@ -137,9 +137,6 @@
 		transform: translate(-50%, -50%);
 		z-index: -1;
 	}
-}
-.gallery + .cta {
-	margin-top: 0;
 }
 // .gallery-item--tall { 
 // 	height: calc(550px + 1rem);

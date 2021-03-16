@@ -941,7 +941,7 @@ table tbody tr:hover {
 }
 
 .gallery {
-  margin: 0 -0.5rem 100px -0.5rem;
+  margin: 0 -0.5rem;
 }
 .gallery__buttons {
   display: flex;
@@ -1072,10 +1072,6 @@ table tbody tr:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-}
-
-.gallery + .cta {
-  margin-top: 0;
 }
 
 .icon {
