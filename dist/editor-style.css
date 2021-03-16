@@ -394,7 +394,8 @@ dd {
   transition: 0.2s transform ease-in-out;
   margin-left: 0.5rem;
 }
-.global-alert + .container {
+.global-alert + .container,
+.global-alert + article {
   margin-top: 100px;
 }
 
@@ -1268,6 +1269,9 @@ html.with-featherlight {
   align-items: baseline;
   justify-content: space-between;
   padding-right: 10%;
+}
+.projects-details__header h2 {
+  width: 75%;
 }
 .projects-details-item {
   display: flex;

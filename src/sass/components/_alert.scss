@@ -30,7 +30,8 @@
 		margin-left: 0.5rem;
 	}
 
-	+ .container {
+	+ .container,
+	+ article {
 		margin-top: $spacing;
 	}
 }

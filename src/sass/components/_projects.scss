@@ -35,6 +35,9 @@
 			align-items: baseline;
 			justify-content: space-between;
 			padding-right: 10%;
+			h2 {
+				width: 75%
+			}
 		}
 		&-item {
 			display: flex;
