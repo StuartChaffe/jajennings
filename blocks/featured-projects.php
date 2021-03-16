@@ -6,11 +6,15 @@
  */
 $projects = get_field( 'featured-projects' );
 $title = get_field( 'featured-projects-title' );
+$content = get_field( 'featured-projects-content' );
 ?>
 
 <div class="container">
 <?php if ( $title ) { ?>
 	<h2><?php echo $title; ?></h2>
+<?php } ?>
+<?php if ( $content ) { ?>
+	<?php echo $content; ?>
 <?php } ?>
 	<div class="projects">
 	<?php if( $projects ) { ?>
