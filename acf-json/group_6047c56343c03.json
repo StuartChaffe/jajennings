@@ -20,6 +20,198 @@
             "toolbar": "full",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_604fb625a4954",
+            "label": "Items",
+            "name": "gallery-items",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add item",
+            "sub_fields": [
+                {
+                    "key": "field_604fb7fea495a",
+                    "label": "Image or Project?",
+                    "name": "is_image",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image",
+                        "project": "Project"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_604fb672a4956",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_604fb7fea495a",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_604fb688a4957",
+                            "label": "Image",
+                            "name": "gallery-image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_604fb6a2a4958",
+                            "label": "Title",
+                            "name": "gallery-image-title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_604fb74ba4959",
+                            "label": "Size",
+                            "name": "gallery-image-size",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "gallery-item--tall": "Tall",
+                                "gallery-item--small": "Small"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "Small",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_604fc5179a43c",
+                            "label": "Market",
+                            "name": "gallery-image-market",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "market",
+                            "field_type": "checkbox",
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_604fb635a4955",
+                    "label": "Project",
+                    "name": "project",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_604fb7fea495a",
+                                "operator": "==",
+                                "value": "project"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "project"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "taxonomy"
+                    ],
+                    "elements": "",
+                    "min": "",
+                    "max": "",
+                    "return_format": "id"
+                }
+            ]
         }
     ],
     "location": [
@@ -39,5 +231,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615574752
+    "modified": 1615887694
 }

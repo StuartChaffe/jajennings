@@ -30,10 +30,10 @@
 	}
 	&--blue {
 		::selection {
-			background: lighten($color-secondary, 50%); /* WebKit/Blink Browsers */
+			background: lighten($color-secondary, 40%); /* WebKit/Blink Browsers */
 		  }
 		::-moz-selection {
-			background: lighten($color-secondary, 50%); /* Gecko Browsers */
+			background: lighten($color-secondary, 40%); /* Gecko Browsers */
 		}
 		h2, h3, h4 {
 			color: $color-secondary;

@@ -1,5 +1,37 @@
 .gallery {
 	margin: 0 -0.5rem $spacing -0.5rem;
+	// &__content {
+	// 	margin-bottom: $spacing / 2;
+	// }
+	&__buttons {
+		display: flex;
+		margin: 2rem 0;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgba(0,0,0,0.5);
+		p {
+			margin: 0 1rem 0 0;
+			color: $color-primary;
+			&:last-of-type {
+				margin-left: 2rem;
+			}
+		}
+		button {
+			font-size: $font-size-base;
+			color: $color-text-base;
+			background-color: transparent;
+			border: 0;
+			font-weight: $font-weight-normal;
+			-webkit-font-smoothing: antialiased;
+			line-height: 1.3rem;
+			margin-right: 1rem;
+			outline: 0;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				outline: 0;
+			}
+		}
+	}
 }
 .gallery:after {
 	content: '';

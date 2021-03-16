@@ -25,15 +25,15 @@
   color: #5E4078;
 }
 .theme--blue ::-moz-selection {
-  background: #f7fafc;
+  background: #d3e2ed;
   /* WebKit/Blink Browsers */
 }
 .theme--blue ::selection {
-  background: #f7fafc;
+  background: #d3e2ed;
   /* WebKit/Blink Browsers */
 }
 .theme--blue ::-moz-selection {
-  background: #f7fafc;
+  background: #d3e2ed;
   /* Gecko Browsers */
 }
 .theme--blue h2, .theme--blue h3, .theme--blue h4 {
@@ -938,6 +938,35 @@ table tbody tr:hover {
 
 .gallery {
   margin: 0 -0.5rem 100px -0.5rem;
+}
+.gallery__buttons {
+  display: flex;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.gallery__buttons p {
+  margin: 0 1rem 0 0;
+  color: #5E4078;
+}
+.gallery__buttons p:last-of-type {
+  margin-left: 2rem;
+}
+.gallery__buttons button {
+  font-size: 1rem;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3rem;
+  margin-right: 1rem;
+  outline: 0;
+}
+.gallery__buttons button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  outline: 0;
 }
 
 .gallery:after {
