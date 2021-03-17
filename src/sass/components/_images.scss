@@ -12,7 +12,7 @@
 			margin-bottom: 0;
 			padding: 0 0.5rem;
 		}
-		&:first-child {
+		&:nth-child(3n+1) {
 			flex: 1 1 100%;
 			margin-bottom: 1rem;
 			padding: 0;
@@ -20,18 +20,18 @@
 				margin-bottom: 1rem;
 			}
 		}
+		&:nth-child(3n+2) {
+			padding-left: 0;
+		}
+		&:nth-child(3n+3) {
+			padding-right: 0;
+		}
 		&:nth-child(4) {
 			flex: 1 1 100%;
 			margin-top: 1rem;
 			@include mq(medium) {
 				padding: 0;
 			}
-		}
-		&:nth-child(2) {
-			padding-left: 0;
-		}
-		&:nth-child(3) {
-			padding-right: 0;
 		}
 		img {
 			width: 100%;
