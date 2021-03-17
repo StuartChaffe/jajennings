@@ -1191,6 +1191,9 @@ table tbody tr:hover {
 .images-item img {
   width: 100%;
 }
+.images + .images {
+  margin-top: 1rem;
+}
 
 .map {
   width: 100%;
