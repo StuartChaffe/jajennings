@@ -984,6 +984,7 @@ table tbody tr:hover {
 }
 .gallery__buttons {
   display: flex;
+  align-items: center;
   margin: 2rem 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -993,7 +994,12 @@ table tbody tr:hover {
   color: #5E4078;
 }
 .gallery__buttons p:last-of-type {
-  margin-left: 2rem;
+  margin-left: 3rem;
+}
+.gallery__buttons select {
+  width: auto;
+  margin-bottom: 0;
+  padding: 0.5rem 0;
 }
 .gallery__buttons button {
   font-size: 1rem;
