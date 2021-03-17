@@ -82,7 +82,7 @@ if( $gallery_items ) {
 		}
 	?>
 
-		<div class="gallery-item test-item <?php echo $size; ?> <?php foreach ( $markets as $market ) { echo $market . ' '; } ?> image">
+		<div class="gallery-item <?php echo $size; ?> <?php foreach ( $markets as $market ) { echo $market . ' '; } ?> image">
 			<a href="<?php echo $image['url']; ?>" class="gallery-item__link modal">
 				<img src="<?php echo $image['url']; ?>" alt="">
 				<?php if ( $title ) { ?>
