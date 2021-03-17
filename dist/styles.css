@@ -715,9 +715,12 @@ table tbody tr:hover {
   width: 100%;
   position: relative;
   height: calc(90vh - 136px);
+  min-height: 620px;
   display: flex;
   align-items: flex-end;
   margin-bottom: 100px;
+  max-height: 800px;
+  min-height: 520px;
 }
 .banner-has-content {
   margin-bottom: 150px;
