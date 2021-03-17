@@ -634,6 +634,9 @@ dd {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.content-block p {
+  order: 3;
+}
 
 .content abbr {
   border-bottom: 1px dotted;
