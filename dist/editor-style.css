@@ -612,16 +612,27 @@ dd {
 .content-block {
   position: relative;
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .content-block__label {
-  position: absolute;
+  position: relative;
   display: flex;
-  right: 10%;
-  top: 1.5rem;
   color: #5E4078;
+  width: 100%;
+  order: 2;
+}
+@media (min-width: 50em) {
+  .content-block__label {
+    position: absolute;
+    right: 10%;
+    top: 1.5rem;
+    width: auto;
+  }
 }
 .content-block__label + h2 {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .content abbr {

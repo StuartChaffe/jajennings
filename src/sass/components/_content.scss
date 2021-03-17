@@ -13,14 +13,25 @@
 	&-block {
 		position: relative;
 		padding-bottom: $spacing;
+		display: flex;
+		flex-direction: column;
+		
 		&__label {
-			position: absolute;
+			position: relative;
 			display: flex;
-			right: 10%;
-			top: 1.5rem;
 			color: $color-primary;
+			width: 100%;
+			order: 2;
+
+			@include mq(medium) {
+				position: absolute;
+				right: 10%;
+				top: 1.5rem;
+				width: auto;
+			}
 			+ h2 {
 				margin-top: 0;
+				margin-bottom: 1rem;
 			}
 		}
 	}
