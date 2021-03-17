@@ -1526,11 +1526,6 @@ html.with-featherlight {
   display: flex;
   margin-top: -1rem;
 }
-@media (min-width: 50em) {
-  .pull-out-container {
-    margin-top: -5rem;
-  }
-}
 
 /* Slider */
 .slick-slider {
