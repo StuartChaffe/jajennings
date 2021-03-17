@@ -19,6 +19,7 @@ jQuery(document).ready(function($) {
 		arrows: true,
 		infinite: true,
 		dots: true,
+		adaptiveHeight: true,
 		// centerMode: true,
 		// centerPadding: "260px",
 		responsive: [
