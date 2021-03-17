@@ -136,6 +136,15 @@ function jajennings_acf_blocks() {
 			'icon'				=> 'location-alt',
 			'keywords'			=> array( 'map, location' )
 		));
+		acf_register_block(array(
+			'name'				=> 'carousel',
+			'title'				=> __('Carousel'),
+			'description'		=> __('Add a carousel'),
+			'render_callback'	=> 'jajennings_acf_block_render_callback',
+			'category'			=> 'jajennings-blocks',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'carousel, slider' )
+		));
 	}
 }
 
@@ -153,6 +162,7 @@ function jajennings_allowed_block_types( $allowed_blocks ) {
  
 	return array(
 		'acf/banner',
+		'acf/carousel',
 		'acf/content',
 		'acf/cta',
 		'acf/featured-projects',

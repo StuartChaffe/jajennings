@@ -1,0 +1,41 @@
+.carousel {
+	&__title {
+		background: $color-secondary;
+		margin-left: auto;
+		padding: 40px;
+		width: 90%;
+		padding: 30px;
+		transform: translateY(50%);
+		z-index: 9;
+		
+		@include mq(medium) {
+			width: 60%;
+		}
+		h2 {
+			color: white;
+			margin: 0;
+		}
+	}
+	&-slider {
+		&-item {
+			display: flex;
+			height: 100%;
+			&__title {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				color: white;
+				padding: 80px 30px 30px;
+				background: rgb(0,0,0,0.8);
+				background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+				p {
+					max-width: 300px;
+				}
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

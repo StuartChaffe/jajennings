@@ -72,12 +72,12 @@
 		background: $color-primary;
 		margin-left: auto;
 		width: 90%;
-		padding: 40px;
+		padding: 30px;
 		transform: translateY(30%);
 		
 		@include mq(medium) {
 			width: 60%;
-			padding: 40px 80px 40px 40px;
+			padding: 30px 80px 30px 30px;
 		}
 
 		h1 {

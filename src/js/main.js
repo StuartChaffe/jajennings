@@ -9,6 +9,36 @@ jQuery(document).ready(function($) {
 		$menuContainer.toggleClass("is-active");
 	});
 
+	$(".carousel-slider").slick({
+		// settings: "unslick",
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: true,
+		infinite: true,
+		dots: true,
+		// centerMode: true,
+		// centerPadding: "260px",
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 1,
+					// centerPadding: "160px",
+				}
+			},
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1,
+					// centerPadding: "60px",
+				}
+			}
+		]
+	});
+
 	// window.addEventListener("scroll", checkPosition);
 	// window.addEventListener("resize", init);
 
