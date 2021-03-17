@@ -634,6 +634,11 @@ dd {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+@media (min-width: 50em) {
+  .content-block__label + h2 {
+    margin-bottom: 1em;
+  }
+}
 .content-block p {
   order: 3;
 }
