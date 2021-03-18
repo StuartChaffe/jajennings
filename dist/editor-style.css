@@ -421,7 +421,7 @@ dd {
 @media (min-width: 50em) {
   .banner {
     height: 60vh;
-    min-height: 620px;
+    min-height: 732px;
   }
 }
 .banner-outer {
