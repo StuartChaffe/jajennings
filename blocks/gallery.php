@@ -44,21 +44,24 @@ if( $gallery_items ) {
 	<?php } ?>
 	
 	<div class="gallery__buttons">
-		<p>Filter:</p>
-		<button data-filter="*">All</button>
-		<button data-filter=".image">Gallery</button>
-		<button data-filter=".project">Case Study</button>
-
-		<p>Markets:</p>
-		<select class="filters-select">
-			<option value="*">All</option>
-			<?php
-			$filter_terms = array_unique($filter_terms); 
-			foreach ( $filter_terms as $filter_term ) {
-				echo '<option value=".' . sanitize_title($filter_term) . '">' . $filter_term . '</option>';
-			}
-			?>
-		</select>
+		<div class="gallery__buttons-item">
+			<p>Filter:</p>
+			<button data-filter="*">All</button>
+			<button data-filter=".image">Gallery</button>
+			<button data-filter=".project">Case Study</button>
+		</div>
+		<div class="gallery__buttons-item">
+			<p>Markets:</p>
+			<select class="filters-select">
+				<option value="*">All</option>
+				<?php
+				$filter_terms = array_unique($filter_terms); 
+				foreach ( $filter_terms as $filter_term ) {
+					echo '<option value=".' . sanitize_title($filter_term) . '">' . $filter_term . '</option>';
+				}
+				?>
+			</select>
+		</div>
 	</div>
 	
 	<div class="gallery">
