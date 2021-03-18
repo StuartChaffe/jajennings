@@ -30,8 +30,11 @@ $content = get_field( 'featured-projects-content' );
 			$terms = get_the_terms(($project), 'market' );
 		?>
 			<div class="projects-item__image">
-				<img class="hidemobile" src="<?php echo $image['project-image-featured']['url']; ?>" alt="<?php echo $image['project-image-featured']['alt']; ?>" />
-				<img class="hidedesktop" src="<?php echo $image['project-image-mobile']['url']; ?>" alt="<?php echo $image['project-image-mobile']['alt']; ?>" />
+
+	
+
+				<img <?php if( $image['project-image-mobile'] ) { ?><?php echo 'class="hidemobile"' ?><?php } ?> src="<?php echo $image['project-image-featured']['url']; ?>" alt="<?php echo $image['project-image-featured']['alt']; ?>" />
+				<?php if ( $image['project-image-mobile'] ) { ?><img class="hidedesktop" src="<?php echo$image['project-image-mobile']['url']; ?>" alt="<?php echo $image['project-image-mobile']['alt']; ?>" /><?php } ?>
 			</div>
 		</a>
 		<a class="projects-item__link" href="<?php the_permalink($project); ?>">

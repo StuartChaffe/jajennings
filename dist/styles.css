@@ -1705,6 +1705,12 @@ html.with-featherlight {
   transform: translate(-50%, -50%);
   transition: 0.2s transform ease-in-out;
 }
+@media (max-width: 49.99em) {
+  .projects-item__image img {
+    max-width: none;
+    height: 100%;
+  }
+}
 .projects-item__link {
   position: absolute;
   z-index: 1;
