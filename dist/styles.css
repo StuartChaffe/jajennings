@@ -737,6 +737,13 @@ table tbody tr:hover {
   overflow: hidden;
   position: absolute;
 }
+.banner-outer .icon--arrow {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  color: white;
+}
 .banner__image {
   display: block;
   z-index: 0;
@@ -2552,6 +2559,10 @@ html.with-featherlight {
   padding: 0 1.5em;
   width: 100%;
   max-width: 2000px;
+}
+
+.home .banner-outer .icon--arrow {
+  display: none;
 }
 
 .block {

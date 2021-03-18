@@ -22,6 +22,13 @@
 		height: 100%;
 		overflow: hidden;
 		position: absolute;
+		.icon--arrow {
+			position: absolute;
+			bottom: 3rem;
+			left: 50%;
+			transform: translateX(-50%) rotate(90deg);
+			color: white;
+		}
 	}
 
 	&__image {
