@@ -1860,7 +1860,7 @@ html.with-featherlight {
 .global-container {
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: #fff;
   position: relative;
@@ -1877,7 +1877,7 @@ html.with-featherlight {
   margin: 0 auto;
   padding: 0 1.5em;
   width: 100%;
-  max-width: 1600px;
+  max-width: 2000px;
 }
 
 .block {
