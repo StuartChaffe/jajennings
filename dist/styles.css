@@ -861,6 +861,7 @@ table tbody tr:hover {
   left: 0;
   width: 100%;
   color: white;
+  z-index: 1;
   padding: 80px 30px 30px;
   background: rgba(0, 0, 0, 0.8);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
