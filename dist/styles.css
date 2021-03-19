@@ -833,6 +833,7 @@ table tbody tr:hover {
 }
 
 .carousel__title {
+  position: relative;
   background: #4882AC;
   margin-left: auto;
   padding: 40px;

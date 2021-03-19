@@ -1,5 +1,6 @@
 .carousel {
 	&__title {
+		position: relative;
 		background: $color-secondary;
 		margin-left: auto;
 		padding: 40px;

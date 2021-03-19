@@ -44,9 +44,17 @@ body {
 .editor-styles-wrapper ul {
 	margin-left: 0 !important;
 }
+ul.accordion {
+	margin-left: 0;
+}
 .accordion__content {
 	display: none;
 }
 .editor-styles-wrapper .wp-block {
 	max-width: 1200px !important;
+}
+.carousel-slider-item:not(:first-child) {
+	&:not(:first-child) {
+		display: none;
+	}
 }
