@@ -8,15 +8,16 @@ $content = get_field( 'textimage-content');
 $code = get_field( 'textimage-code');
 $size = get_field( 'textimage-size');
 $id = get_field( 'textimage-id');
+$position = get_field('textimage-position');
+$hide = get_field( 'textimage-image-hide');
 ?>
 <div class="text-image" <?php if ( $id ) { ?>id="<?php echo $id ?>"<?php } ?>>
-<?php if( have_rows('image') ): ?>
-	<?php while( have_rows('image') ): the_row();
+<?php if( have_rows('images') ): $i = 0; ?>
+	<?php while( have_rows('images') ): $i++; the_row();
 		$image = get_sub_field('textimage-image');
-		$position = get_sub_field('textimage-position');
 		$imagetitle = get_sub_field('textimage-title', false, false);
 	?>
-	<div class="text-image__image <?php echo $position ?>">
+	<div class="text-image__image image-<?php echo $i; ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>">
 		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagetitle ) { ?>
 			<div class="text-image__title">
@@ -24,6 +25,8 @@ $id = get_field( 'textimage-id');
 			</div>
 		<?php } ?>
 	</div>
+	<?php endwhile; ?>
+<?php endif; ?>
 
 	<div class="text-image__content">
 	<?php if( have_rows('textimage-content') ): ?>
@@ -37,13 +40,13 @@ $id = get_field( 'textimage-id');
 			<?php echo $text ?>
 		<?php } ?>
 			
-		<?php if( have_rows('textimage-content-links') ): ?>
-			<?php while( have_rows('textimage-content-links') ): the_row();
+		<?php if( have_rows('textimage-content-links') ): $i = 0; ?>
+			<?php while( have_rows('textimage-content-links') ): $i++; the_row();
 				$title = get_sub_field('link-title');
 				$text = get_sub_field('link-text');
 				$link = get_sub_field('link-link');
 			?>
-				<a href="<?php echo $link ?>" class="text-image__content-link">
+				<a href="<?php echo $link ?>" class="text-image__content-link link-<?php echo $i; ?>">
 				<?php if ( $title ) { ?>
 					<p><?php echo $title ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 				<?php } ?>
@@ -74,6 +77,4 @@ $id = get_field( 'textimage-id');
 	<?php endif; ?>
 
 	</div>
-<?php endwhile; ?>
-<?php endif; ?>
 </div>

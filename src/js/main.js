@@ -40,6 +40,31 @@ jQuery(document).ready(function($) {
 		]
 	});
 
+	// $(document).ready(function() {       
+	// 	$('.link-1, .link-2, .link-3').hover(function(){     
+	// 		$('.image-1, .image-2, .image-3').toggle('show');    
+	// 	}, 
+	// 	function(){    
+	// 		$('.image-1').removeClass('show');     
+	// 	});
+	// }); 
+	// $(document).ready(function() {     
+	// 	$('.link-1').hover(function(){     
+	// 		$('.image-1').addClass('show');    
+	// 	},     
+	// 	function(){    
+	// 		$('.image-1').removeClass('show');     
+	// 	});
+	// }); 
+	// $(document).ready(function() {     
+	// 	$('.link-2').hover(function(){     
+	// 		$('.image-2').addClass('show');    
+	// 	},     
+	// 	function(){    
+	// 		$('.image-2').removeClass('show');     
+	// 	});
+	// }); 
+
 	// window.addEventListener("scroll", checkPosition);
 	// window.addEventListener("resize", init);
 
