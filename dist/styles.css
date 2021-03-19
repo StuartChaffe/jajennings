@@ -2078,6 +2078,12 @@ html.with-featherlight {
     flex-direction: row;
   }
 }
+.text-image .text-image__image {
+  display: none;
+}
+.text-image .is-visible {
+  display: block;
+}
 .text-image__image {
   width: 100%;
   position: relative;

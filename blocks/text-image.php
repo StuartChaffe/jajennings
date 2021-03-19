@@ -17,7 +17,7 @@ $hide = get_field( 'textimage-image-hide');
 		$image = get_sub_field('textimage-image');
 		$imagetitle = get_sub_field('textimage-title', false, false);
 	?>
-	<div class="text-image__image image-<?php echo $i; ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>">
+	<div class="text-image__image image-<?php echo $i; ?> <?php if ( $i == '1' ) { echo 'is-visible'; } ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>">
 		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagetitle ) { ?>
 			<div class="text-image__title">
@@ -46,7 +46,7 @@ $hide = get_field( 'textimage-image-hide');
 				$text = get_sub_field('link-text');
 				$link = get_sub_field('link-link');
 			?>
-				<a href="<?php echo $link ?>" class="text-image__content-link link-<?php echo $i; ?>">
+				<a href="<?php echo $link ?>" class="text-image__content-link" data-image=".image-<?php echo $i; ?>">
 				<?php if ( $title ) { ?>
 					<p><?php echo $title ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 				<?php } ?>

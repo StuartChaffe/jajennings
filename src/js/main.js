@@ -40,31 +40,6 @@ jQuery(document).ready(function($) {
 		]
 	});
 
-	// $(document).ready(function() {       
-	// 	$('.link-1, .link-2, .link-3').hover(function(){     
-	// 		$('.image-1, .image-2, .image-3').toggle('show');    
-	// 	}, 
-	// 	function(){    
-	// 		$('.image-1').removeClass('show');     
-	// 	});
-	// }); 
-	// $(document).ready(function() {     
-	// 	$('.link-1').hover(function(){     
-	// 		$('.image-1').addClass('show');    
-	// 	},     
-	// 	function(){    
-	// 		$('.image-1').removeClass('show');     
-	// 	});
-	// }); 
-	// $(document).ready(function() {     
-	// 	$('.link-2').hover(function(){     
-	// 		$('.image-2').addClass('show');    
-	// 	},     
-	// 	function(){    
-	// 		$('.image-2').removeClass('show');     
-	// 	});
-	// }); 
-
 	// window.addEventListener("scroll", checkPosition);
 	// window.addEventListener("resize", init);
 
@@ -167,3 +142,23 @@ function offsetAnchor() {
   window.setTimeout(offsetAnchor, 0);
   
 });
+
+
+(function () {
+	const elements = document.querySelectorAll('[data-image]');
+  const images = document.getElementsByClassName('text-image__image');
+	  
+	if (elements.length === 0) {
+		return false;
+	}
+
+	elements.forEach(element => {
+	const target = document.querySelector(element.dataset.image);   
+	const toggleClass = 'is-visible';
+
+		element.addEventListener('mouseover', () => {
+	  Array.from(images).forEach((el) => el.classList.remove(toggleClass));
+	  target.classList.add(toggleClass);
+		}, false);
+	});
+}());
