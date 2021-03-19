@@ -24,14 +24,14 @@
 			@include mq(medium) {
 				margin-bottom: 1rem;
 				height: calc(100vw / 2);
-				max-height: 733px;
+				max-height: 870px;
 			}
 		}
 		&:nth-child(3n+2),
 		&:nth-child(3n+3) {
 			width: calc(100vw / 2 - 0.5rem);
 			height: calc(100vw / 2);
-			max-height: 733px;
+			max-height: 870px;
 			max-width: calc(1000px - 0.5rem);
 		}
 		&:nth-child(3n+2) {
