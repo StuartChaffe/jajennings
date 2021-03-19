@@ -853,6 +853,7 @@ table tbody tr:hover {
 .carousel-slider-item {
   display: flex;
   height: 100%;
+  min-height: 732px;
 }
 .carousel-slider-item__title {
   position: absolute;
@@ -1882,6 +1883,8 @@ html.with-featherlight {
   position: relative;
   height: 100%;
   min-height: 1px;
+  max-height: 732px;
+  overflow: hidden;
 }
 
 [dir=rtl] .slick-slide {
@@ -1890,6 +1893,9 @@ html.with-featherlight {
 
 .slick-slide img {
   display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slick-slide.slick-loading img {
