@@ -962,6 +962,9 @@ table tbody tr:hover {
 .cta p:last-child {
   margin-bottom: 0;
 }
+.cta h2 {
+  color: #5E4078 !important;
+}
 .cta--border {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   padding-top: 100px;

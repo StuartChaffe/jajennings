@@ -7,6 +7,9 @@
 			margin-bottom: 0;
 		}
 	}
+	h2 {
+		color: $color-primary !important;
+	}
 
 	&--border {
 		border-top: 1px solid rgba(0,0,0,0.5);
