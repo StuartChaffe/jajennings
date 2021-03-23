@@ -17,6 +17,9 @@
 	padding: 0 1.5rem;
 	width: 100%;
 	max-width: $container;
+	@include mq(medium) {
+		padding: 0 5rem;
+	}
 }
 
 .container--large {

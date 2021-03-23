@@ -618,7 +618,7 @@ dd {
 }
 
 .content > p, .content > h1, .content > h2, .content > h3, .content > h4, .content > h5 {
-  max-width: 1200px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
@@ -1944,7 +1944,12 @@ html.with-featherlight {
   margin: 0 auto;
   padding: 0 1.5rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
+}
+@media (min-width: 50em) {
+  .container {
+    padding: 0 5rem;
+  }
 }
 
 .container--large {
