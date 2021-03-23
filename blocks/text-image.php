@@ -48,7 +48,7 @@ $hide = get_field( 'textimage-image-hide');
 			?>
 				<a href="<?php echo $link ?>" class="text-image__content-link" data-image=".image-<?php echo $i; ?>">
 				<?php if ( $title ) { ?>
-					<p><?php echo $title ?></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+					<p><strong><?php echo $title ?></strong></p> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 				<?php } ?>
 				<?php if ( $text ) { ?>
 					<p><?php echo $text ?></p>
