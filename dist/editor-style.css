@@ -702,6 +702,9 @@ dd {
   position: relative;
   padding-right: 1.5rem;
 }
+.cta a {
+  font-weight: 600;
+}
 .cta p:last-child {
   margin-bottom: 0;
 }

@@ -2,6 +2,10 @@
 	margin: $spacing 0;
 	position: relative;
 	padding-right: 1.5rem;
+	a {
+		// text-decoration: underline;
+		font-weight: $font-weight-bold;
+	}
 	p {
 		&:last-child {
 			margin-bottom: 0;
