@@ -27,6 +27,9 @@
 			@include mq(medium) {
 				order: 2;
 			}
+			+ .text-image__content {
+				margin-left: auto;
+			}
 		}
 	}
 	&__title {
