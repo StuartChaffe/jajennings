@@ -1886,7 +1886,6 @@ html.with-featherlight {
   width: 100%;
   padding: 1rem 1.5rem;
   max-width: 720px;
-  margin: 0 auto;
 }
 @media (min-width: 50em) {
   .text-image__content {

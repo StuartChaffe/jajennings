@@ -46,7 +46,7 @@
 		width: 100%;
 		padding: 1rem 1.5rem;
 		max-width: 720px;
-		margin: 0 auto;
+		// margin: 0 auto;
 		@include mq(medium) {
 			width: 60%;
 			padding: 1rem $spacing;
