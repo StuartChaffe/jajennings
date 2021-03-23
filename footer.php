@@ -13,7 +13,7 @@
 				<?php } ?>
 				<?php if(get_field('company_email', 'options')) { ?>
 					<p>Email:<br />
-					<?php the_field('company_email', 'options') ?></p>
+					<a href="mailto:<?php the_field('company_email', 'options') ?>"><?php the_field('company_email', 'options') ?></a></p>
 				<?php } ?>
 				</div>
 				<div class="global-footer__content-top--address">
