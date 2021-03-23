@@ -29,7 +29,7 @@ $size = get_field( 'project-size');
 <?php if ( $building || $architect || $size ) { ?>
 <div class="projects-details-container">
 	<div class="projects-details">
-	<h3>Project Details</h3>
+	<h4>Project Details</h4>
 	<?php if ( $building ) { ?>
 		<div class="projects-details-item">
 			<div><p>Building:</p></div>

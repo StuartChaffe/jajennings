@@ -17,10 +17,10 @@
 		z-index: 1;
 
 		@include mq(medium) {
-			width: 70%;
+			width: 40%;
 		}
 		@include mq(large) {
-			width: 50%;
+			width: 30%;
 		}
 
 

@@ -1408,12 +1408,12 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .projects-details {
-    width: 70%;
+    width: 40%;
   }
 }
 @media (min-width: 62.5em) {
   .projects-details {
-    width: 50%;
+    width: 30%;
   }
 }
 .projects-details h2, .projects-details h3, .projects-details h4, .projects-details p {
