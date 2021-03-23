@@ -1,7 +1,7 @@
 .text-image {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	margin-bottom: $spacing-med;
 
 	@include mq(medium) {
@@ -43,7 +43,7 @@
 		padding: 1.5rem;
 		height: 50%;
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 	}
 	&__content {
 		width: 100%;

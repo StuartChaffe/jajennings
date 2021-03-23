@@ -2095,7 +2095,7 @@ html.with-featherlight {
 .text-image {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 70px;
 }
 @media (min-width: 50em) {
@@ -2137,7 +2137,7 @@ html.with-featherlight {
   padding: 1.5rem;
   height: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .text-image__content {
   width: 100%;
