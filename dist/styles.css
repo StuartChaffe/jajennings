@@ -896,7 +896,7 @@ table tbody tr:hover {
 }
 .content-block {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: column;
 }
