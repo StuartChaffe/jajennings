@@ -7,7 +7,7 @@
 		font-weight: $font-weight-bold;
 		&:hover {
 			.icon--arrow {
-				transform: translateX(0.5rem);
+				transform: translate(0.5rem, -5px);
 				transition: .2s transform ease-in-out;
 			}
 		}
@@ -27,14 +27,14 @@
 	}
 
 	.icon--arrow {
-		position: relative;
+		position: absolute;
 		display: inline-flex;
-		right: 0;
+		// right: 0;
 		bottom: 0;
 		margin-left: 1.5rem;
+		transform: translate(0, -5px);
 		transition: .2s transform ease-in-out;
 		// color: $color-primary;
-		// transform: translateY(-5px);
 	}
 
 	&__content {
