@@ -11,7 +11,7 @@
 	<?php while( have_rows('images') ): the_row();
 		$image = get_sub_field('image');
 	?>	<div class="images-item" style="background-image: url('<?php echo $image['url']; ?>')";>
-			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</div>
 	<?php endwhile; ?>
 <?php endif; ?>

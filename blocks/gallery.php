@@ -87,7 +87,7 @@ if( $gallery_items ) {
 
 		<div class="gallery-item <?php echo $size; ?> <?php foreach ( $markets as $market ) { echo $market . ' '; } ?> image">
 			<a href="<?php echo $image['url']; ?>" class="gallery-item__link modal">
-				<img src="<?php echo $image['url']; ?>" alt="">
+				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 				<?php if ( $title ) { ?>
 				<div class="gallery-item__link-title">
 					<p><?php echo $title ?></p>
@@ -111,7 +111,7 @@ if( $gallery_items ) {
 	?>
 		<div class="gallery-item gallery-item--tall <?php foreach ( $markets as $market ) { echo sanitize_title($market) . ' '; } ?> project">
 			<a href="<?php the_permalink($project_id); ?>" class="gallery-item__project">
-				<img src="<?php echo $featured_image; ?>" alt="">
+				<img loading="lazy" src="<?php echo $featured_image; ?>" alt="<?php echo $image['alt']; ?>">
 				<div class="gallery-item__project-title">
 					<h3><?php echo get_the_title($project_id); ?></h3> 
 					<?php foreach ( $markets as $market ) { echo '<p>' . $market . '</p>'; } ?>
