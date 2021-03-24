@@ -1700,7 +1700,7 @@ html.with-featherlight {
 }
 .projects-details-item {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .projects-details-item div {
   width: 60%;
