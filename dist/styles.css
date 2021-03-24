@@ -1213,6 +1213,7 @@ table tbody tr:hover {
 }
 .images-item {
   background-size: cover;
+  background-position: center center;
   position: relative;
   overflow: hidden;
   flex-direction: row-reverse;
@@ -1233,7 +1234,7 @@ table tbody tr:hover {
 @media (min-width: 50em) {
   .images-item:nth-child(3n+1) {
     margin-bottom: 1rem;
-    height: calc(100vw / 2);
+    height: calc(70vw / 2);
     max-height: 870px;
   }
 }

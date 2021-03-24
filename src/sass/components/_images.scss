@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	&-item {
 		background-size: cover;
+		background-position: center center;
 		// width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -22,7 +23,7 @@
 			margin-bottom: 1rem;
 			@include mq(medium) {
 				margin-bottom: 1rem;
-				height: calc(100vw / 2);
+				height: calc(70vw / 2);
 				max-height: 870px;
 			}
 		}
