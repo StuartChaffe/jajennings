@@ -1861,6 +1861,9 @@ html.with-featherlight {
     order: 2;
   }
 }
+.text-image__image--right + .text-image__content {
+  margin-left: auto;
+}
 .text-image__title {
   background: rgba(0, 0, 0, 0.6);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
@@ -1878,7 +1881,6 @@ html.with-featherlight {
   width: 100%;
   padding: 1rem 1.5rem;
   max-width: 720px;
-  margin: 0 auto;
 }
 @media (min-width: 50em) {
   .text-image__content {
