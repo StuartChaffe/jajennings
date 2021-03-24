@@ -180,7 +180,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #4882AC;
+  color: #916db1;
   text-decoration: underline;
 }
 
@@ -710,7 +710,11 @@ dd {
 .cta a {
   font-weight: 600;
 }
-.cta p:last-child {
+.cta a:hover .icon--arrow {
+  transform: translateX(0.5rem);
+  transition: 0.2s transform ease-in-out;
+}
+.cta p:last-of-type {
   margin-bottom: 0;
 }
 .cta h2 {
@@ -721,11 +725,16 @@ dd {
   padding-top: 70px;
 }
 .cta .icon--arrow {
-  position: absolute;
+  position: relative;
   display: inline-flex;
   right: 0;
   bottom: 0;
-  transform: translateY(-5px);
+  margin-left: 1.5rem;
+  transition: 0.2s transform ease-in-out;
+}
+.cta__content {
+  display: flex;
+  align-items: center;
 }
 
 .featherlight-next span, .featherlight-previous span {

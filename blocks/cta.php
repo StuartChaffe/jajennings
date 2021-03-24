@@ -15,8 +15,10 @@ $border = get_field('cta-border');
 	<?php if ( $title ) { ?>
 		<h2><?php echo $title; ?></h2>
 	<?php } ?>
-	<?php if ( $text ) { ?>
-		<?php echo $text; ?> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
-	<?php } ?>
+		<div class="cta__content"> 
+		<?php if ( $text ) { ?>
+			<?php echo $text; ?>
+		<?php } ?>
+		</div>
 	</div>
 </div>

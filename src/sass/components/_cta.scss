@@ -5,9 +5,15 @@
 	a {
 		// text-decoration: underline;
 		font-weight: $font-weight-bold;
+		&:hover {
+			.icon--arrow {
+				transform: translateX(0.5rem);
+				transition: .2s transform ease-in-out;
+			}
+		}
 	}
 	p {
-		&:last-child {
+		&:last-of-type {
 			margin-bottom: 0;
 		}
 	}
@@ -21,11 +27,18 @@
 	}
 
 	.icon--arrow {
-		position: absolute;
+		position: relative;
 		display: inline-flex;
 		right: 0;
 		bottom: 0;
+		margin-left: 1.5rem;
+		transition: .2s transform ease-in-out;
 		// color: $color-primary;
-		transform: translateY(-5px);
+		// transform: translateY(-5px);
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
 	}
 }

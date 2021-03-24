@@ -18,7 +18,7 @@ $hide = get_field( 'textimage-image-hide');
 		$imagetitle = get_sub_field('textimage-title', false, false);
 	?>
 	<div class="text-image__image image-<?php echo $i; ?> <?php if ( $i == '1' ) { echo 'is-visible'; } ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>">
-		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		<img loading=lazy src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagetitle ) { ?>
 			<div class="text-image__title">
 				<p class="h4"><?php echo $imagetitle ?></p>
