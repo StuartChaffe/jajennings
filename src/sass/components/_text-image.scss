@@ -22,6 +22,10 @@
 			width: 50%;
 		}
 
+		img {
+			width: 100%;
+		}
+
 		&--right {
 			order: 1;
 			@include mq(medium) {

@@ -1850,6 +1850,9 @@ html.with-featherlight {
     width: 50%;
   }
 }
+.text-image__image img {
+  width: 100%;
+}
 .text-image__image--right {
   order: 1;
 }
