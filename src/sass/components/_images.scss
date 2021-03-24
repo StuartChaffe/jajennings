@@ -29,9 +29,9 @@
 		&:nth-child(3n+2),
 		&:nth-child(3n+3) {
 			width: calc(100vw / 2 - 0.5rem);
-			height: calc(100vw / 2);
+			height: calc(70vw / 2);
 			max-height: 870px;
-			max-width: calc(1000px - 0.5rem);
+			max-width: calc(100% - 0.5rem);		
 		}
 		&:nth-child(3n+2) {
 			margin-left: 0;
