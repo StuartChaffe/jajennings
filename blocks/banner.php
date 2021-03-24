@@ -14,8 +14,8 @@ $position = get_field('banner-logo-position');
 <div class="banner<?php if( $title['banner-title-text'] ) { ?> <?php echo 'banner-has-content' ?><?php } ?>">
 	<div class="banner-outer">
 	<?php if ( $image ) { ?>
-		<div class="banner__image">
-			<img <?php if( $image['banner-image-mobile'] ) { ?><?php echo 'class="hidemobile"' ?><?php } ?> src="<?php echo $image['banner-image-large']['url']; ?>" alt="<?php echo $image['banner-image-large']['alt']; ?>" />
+		<div class="banner__image" style="background-image: url('<?php echo $image['banner-image-large']['url']; ?>')">
+			<img class="banner__image--desktop" <?php if( $image['banner-image-mobile'] ) { ?><?php echo 'class="hidemobile"' ?><?php } ?> src="<?php echo $image['banner-image-large']['url']; ?>" alt="<?php echo $image['banner-image-large']['alt']; ?>" />
 			<?php if ( $image['banner-image-mobile'] ) { ?><img class="hidedesktop" src="<?php echo $image['banner-image-mobile']['url']; ?>" alt="<?php echo $image['banner-image-mobile']['alt']; ?>" /><?php } ?>
 		</div>
 	<?php } ?>
