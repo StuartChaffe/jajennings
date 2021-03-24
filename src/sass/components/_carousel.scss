@@ -23,6 +23,7 @@
 			height: 100%;
 			min-height: 280px;
 			@include mq(medium) {
+				height: 80vw;
 				min-height: 732px;
 			}
 			&__title {

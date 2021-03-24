@@ -23,15 +23,15 @@
 			margin-bottom: 1rem;
 			@include mq(medium) {
 				margin-bottom: 1rem;
-				height: calc(70vw / 2);
-				max-height: 870px;
+				height: calc(80vw / 2);
+				// max-height: 900px;
 			}
 		}
 		&:nth-child(3n+2),
 		&:nth-child(3n+3) {
 			width: calc(100vw / 2 - 0.5rem);
 			height: calc(70vw / 2);
-			max-height: 870px;
+			// max-height: 870px;
 			max-width: calc(100% - 0.5rem);		
 		}
 		&:nth-child(3n+2) {

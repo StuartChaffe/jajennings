@@ -856,6 +856,7 @@ table tbody tr:hover {
 }
 @media (min-width: 50em) {
   .carousel-slider-item {
+    height: 80vw;
     min-height: 732px;
   }
 }
@@ -1234,14 +1235,12 @@ table tbody tr:hover {
 @media (min-width: 50em) {
   .images-item:nth-child(3n+1) {
     margin-bottom: 1rem;
-    height: calc(70vw / 2);
-    max-height: 870px;
+    height: calc(80vw / 2);
   }
 }
 .images-item:nth-child(3n+2), .images-item:nth-child(3n+3) {
   width: calc(100vw / 2 - 0.5rem);
   height: calc(70vw / 2);
-  max-height: 870px;
   max-width: calc(100% - 0.5rem);
 }
 .images-item:nth-child(3n+2) {
