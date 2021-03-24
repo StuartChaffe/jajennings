@@ -64,6 +64,37 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_605b676cb11a6",
+                    "label": "Focus",
+                    "name": "banner-image-focus",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left top": "Left Top",
+                        "left center": "Left Center",
+                        "center bottom": "Center Bottom",
+                        "right top": "Right Top",
+                        "right center": "Right Center",
+                        "right bottom": "Right Bottom",
+                        "center top": "Center Top",
+                        "center center": "Center Center"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         },
@@ -162,5 +193,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615302144
+    "modified": 1616603514
 }
