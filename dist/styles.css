@@ -248,7 +248,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1em + 0.3vw);
+  font-size: calc(2.1rem + 0.3vw);
 }
 
 h3, .h3 {
