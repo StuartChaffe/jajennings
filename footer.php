@@ -27,7 +27,7 @@
 				</div>
 
 				<div class="global-footer__content-top--images">
-					images
+					
 				</div>
 			</div>
 			<div class="global-footer__content-bottom">
