@@ -2607,7 +2607,7 @@ html.with-featherlight {
 .global-container {
   display: flex;
   flex-direction: column;
-  max-width: 2000px;
+  max-width: none;
   margin: 0 auto;
   background-color: #fff;
   position: relative;
