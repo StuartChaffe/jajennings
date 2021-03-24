@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 		infinite: true,
 		dots: true,
 		adaptiveHeight: true,
+		pauseOnHover: false,
 		// centerMode: true,
 		// centerPadding: "260px",
 		responsive: [
