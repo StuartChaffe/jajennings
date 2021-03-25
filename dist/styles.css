@@ -427,7 +427,7 @@ figcaption p {
 }
 
 .frm_none_container .frm_primary_label {
-  display: none;
+  display: none !important;
 }
 
 input[type=email],

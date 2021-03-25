@@ -102,7 +102,7 @@
 
 	}
 }
-.frm_none_container .frm_primary_label { display: none; }
+.frm_none_container .frm_primary_label { display: none !important; }
 input[type="email"],
 input[type="number"],
 input[type="search"],
