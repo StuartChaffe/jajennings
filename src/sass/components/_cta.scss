@@ -34,7 +34,7 @@
 		margin-left: 1.5rem;
 		transform: translate(0, -5px);
 		transition: .2s transform ease-in-out;
-		// color: $color-primary;
+		color: $color-primary !important;
 	}
 
 	&__content {
