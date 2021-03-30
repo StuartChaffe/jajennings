@@ -900,6 +900,12 @@ table tbody tr:hover {
   display: flex;
   flex-direction: column;
 }
+.content-block h2:first-of-type {
+  margin-bottom: 0;
+}
+.content-block h2 + p {
+  margin-top: 1em;
+}
 .content-block a {
   text-decoration: underline;
 }

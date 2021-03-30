@@ -16,6 +16,15 @@
 		display: flex;
 		flex-direction: column;
 
+		h2 {
+			&:first-of-type {
+				margin-bottom: 0;
+			}
+			+ p {
+				margin-top: 1em;
+			}
+		}
+
 		a {
 			text-decoration: underline;
 		}
