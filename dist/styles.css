@@ -212,12 +212,12 @@ img[height] {
   /* Gecko Browsers */
 }
 
-p {
+p, ul, li {
   margin-bottom: 1.4em;
   margin-top: 0;
   font-size: 1rem;
 }
-p:last-child {
+p:last-child, ul:last-child, li:last-child {
   margin-bottom: 0;
 }
 
@@ -898,6 +898,13 @@ table tbody tr:hover {
   padding-bottom: 70px;
   display: flex;
   flex-direction: column;
+}
+.content-block ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+.content-block ul li {
+  list-style: disc;
 }
 .content-block__label {
   position: relative;
