@@ -658,7 +658,7 @@ dd {
     margin-bottom: 1em;
   }
 }
-.content-block p {
+.content-block__label + h2 + p {
   order: 3;
 }
 

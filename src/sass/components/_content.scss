@@ -35,10 +35,12 @@
 				@include mq(medium) {
 					margin-bottom: 1em;
 				}
+
+				+ p {
+					order: 3;
+				}
 			}
-		}
-		p {
-			order: 3;
+			
 		}
 	}
 }
