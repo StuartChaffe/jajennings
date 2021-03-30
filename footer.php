@@ -29,6 +29,9 @@
 				<div class="global-footer__content-top--images">
 					
 				</div>
+				<div class="global-footer__content-top--images">
+					<svg class="icon icon--linkedin"><use xlink:href="#linkedin"></use></svg>
+				</div>
 			</div>
 			<div class="global-footer__content-bottom">
 				<div class="global-footer__content-bottom--copy">
