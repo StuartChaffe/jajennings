@@ -5,12 +5,12 @@
 .global-footer {
 	margin-top: $spacing;
 	background-color: $color-primary;
-	font-size: $font-size-small;
+	font-size: $body-size;
 	line-height: 1.5;
 	color: white;
 	p, link, a {
 		color: white;
-		font-size: $font-size-small;
+		font-size: $body-size;
 	}
 	p {
 		&:last-child {

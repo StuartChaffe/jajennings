@@ -147,32 +147,33 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
 	position: absolute;
 	display: block;
-	height: 65px;
-	width: 34px;
+	height: 50px;
+	width: 68px;
 	line-height: 0px;
 	font-size: 0px;
 	cursor: pointer;
-	background: transparent;
+	background-color: $color-secondary;
 	color: transparent;
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	padding: 0;
 	border: none;
 	outline: none;
 	z-index: 9;
-	transition: .2s transform ease-in-out;
+	transition: .2s background-color ease-in-out;
 	&:hover, &:focus {
 		outline: none;
-		background: transparent;
+		background-color: darken($color-secondary, 5%);
 		color: transparent;
-		transition: .2s transform ease-in-out;
+		transition: .2s background-color ease-in-out;
 	}
 	&:before {
-		font-family: $slick-font-family;
-		font-size: 20px;
-		line-height: 1;
+		// font-family: $slick-font-family;
+		// font-size: 20px;
+		// line-height: 1;
+		top: 50%;
+		transform: translate(0, -50%);
 		color: $slick-arrow-color;
 		opacity: $slick-opacity-default;
 		-webkit-font-smoothing: antialiased;
@@ -181,28 +182,42 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-	left: 20px;
+	left: 0px;
+	padding: 0 1rem 0 2rem;
 	&:before {
+		position: absolute;
+		right: 1rem;
+		transition: .2s all ease-in-out;
 		content: url("../src/icons/arrow-white-left.svg");
 		[dir="rtl"] & {
 			content: url("../src/icons/arrow-white-left.svg");
 		}
 	}
 	&:hover {
-		transform: translate(-0.5rem, -50%);
+		&:before {
+			transform: translate(-0.5rem, -50%);
+			transition: .2s all ease-in-out;
+		}
 	}
 }
 
 .slick-next {
-	right: 20px;
+	right: 0px;
+	padding: 0 2rem 0 1rem;
 	&:before {
+		position: absolute;
+		left: 1rem;
+		transition: .2s all ease-in-out;
 		content: url("../src/icons/arrow-white.svg");
 		[dir="rtl"] & {
 			content: url("../src/icons/arrow-white.svg");
 		}
 	}
 	&:hover {
-		transform: translate(0.5rem, -50%);
+		&:before {
+			transform: translate(0.5rem, -50%);
+			transition: .2s all ease-in-out;
+		}
 	}
 }
 

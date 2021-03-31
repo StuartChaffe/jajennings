@@ -181,7 +181,7 @@ body {
   background-color: #F7F7F7;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: calc(16px + 0.3vw);
+  font-size: calc(20px + 0.3vw);
   line-height: 1.25;
   font-weight: 300;
 }
@@ -216,6 +216,11 @@ p {
   margin-bottom: 1.4em;
   margin-top: 0;
   font-size: 1rem;
+}
+@media (min-width: 50em) {
+  p {
+    font-size: 20px;
+  }
 }
 p:last-child {
   margin-bottom: 0;
@@ -590,7 +595,7 @@ table tbody tr:hover {
   text-align: left;
 }
 .accordion__title {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 300;
   position: relative;
   display: flex;
@@ -919,7 +924,7 @@ table tbody tr:hover {
 }
 .content-block__label {
   position: relative;
-  display: flex;
+  display: none;
   color: #5E4078;
   width: 100%;
   order: 2;
@@ -1154,6 +1159,9 @@ table tbody tr:hover {
   margin-top: auto;
   padding: 4rem 1rem 1rem 1rem;
   z-index: 1;
+}
+.gallery-item__link-title p {
+  font-size: 1rem;
 }
 .gallery-item__project {
   display: flex;
@@ -1724,7 +1732,6 @@ html.with-featherlight {
 @media (min-width: 50em) {
   .projects-details__header h2 {
     margin-bottom: 2rem;
-    width: 75%;
   }
 }
 .projects-details__header p {
@@ -1749,6 +1756,9 @@ html.with-featherlight {
   .projects-details-item div:first-child {
     width: 120px;
   }
+}
+.projects-details-item div p {
+  font-size: 1rem;
 }
 .projects-details-item:last-child {
   margin-bottom: 0;
@@ -1993,34 +2003,32 @@ html.with-featherlight {
 .slick-next {
   position: absolute;
   display: block;
-  height: 65px;
-  width: 34px;
+  height: 50px;
+  width: 68px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
-  background: transparent;
+  background-color: #4882AC;
   color: transparent;
   top: 50%;
   transform: translate(0, -50%);
-  padding: 0;
   border: none;
   outline: none;
   z-index: 9;
-  transition: 0.2s transform ease-in-out;
+  transition: 0.2s background-color ease-in-out;
 }
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
   outline: none;
-  background: transparent;
+  background-color: #40749a;
   color: transparent;
-  transition: 0.2s transform ease-in-out;
+  transition: 0.2s background-color ease-in-out;
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
+  top: 50%;
+  transform: translate(0, -50%);
   color: white;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
@@ -2028,29 +2036,39 @@ html.with-featherlight {
 }
 
 .slick-prev {
-  left: 20px;
+  left: 0px;
+  padding: 0 1rem 0 2rem;
 }
 .slick-prev:before {
+  position: absolute;
+  right: 1rem;
+  transition: 0.2s all ease-in-out;
   content: url("../src/icons/arrow-white-left.svg");
 }
 [dir=rtl] .slick-prev:before {
   content: url("../src/icons/arrow-white-left.svg");
 }
-.slick-prev:hover {
+.slick-prev:hover:before {
   transform: translate(-0.5rem, -50%);
+  transition: 0.2s all ease-in-out;
 }
 
 .slick-next {
-  right: 20px;
+  right: 0px;
+  padding: 0 2rem 0 1rem;
 }
 .slick-next:before {
+  position: absolute;
+  left: 1rem;
+  transition: 0.2s all ease-in-out;
   content: url("../src/icons/arrow-white.svg");
 }
 [dir=rtl] .slick-next:before {
   content: url("../src/icons/arrow-white.svg");
 }
-.slick-next:hover {
+.slick-next:hover:before {
   transform: translate(0.5rem, -50%);
+  transition: 0.2s all ease-in-out;
 }
 
 .slick-dots {
@@ -2243,6 +2261,7 @@ html.with-featherlight {
   position: sticky;
   top: 0;
   z-index: 99;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .global-header--logo {
   width: 175px;
@@ -2336,7 +2355,7 @@ html.with-featherlight {
 .global-header--nav ul li a {
   display: flex;
   color: #000;
-  font-size: 1rem;
+  font-size: 20px;
   height: 100%;
   transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
   padding: 1.5rem 1.5rem;
@@ -2519,13 +2538,13 @@ html.with-featherlight {
 .global-footer {
   margin-top: 70px;
   background-color: #5E4078;
-  font-size: 0.85rem;
+  font-size: 20px;
   line-height: 1.5;
   color: white;
 }
 .global-footer p, .global-footer link, .global-footer a {
   color: white;
-  font-size: 0.85rem;
+  font-size: 20px;
 }
 .global-footer p:last-child {
   margin-bottom: 0;

@@ -15,11 +15,11 @@ $size = get_field( 'project-size');
 <div class="container">
 	<div class="projects-details__header">
 		<h2><?php the_title(); ?></h2>
-		<?php
+		<!-- <?php
 			$terms = get_the_terms( get_the_ID(), 'market' );
 			foreach ( $terms as $term ) {
 			echo '<p>' .$term->name . '</p>';
-		} ?>
+		} ?> -->
 	</div>
 	<?php if ( $desc ) { ?>
 		<?php echo $desc; ?>

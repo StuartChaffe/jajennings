@@ -25,7 +25,6 @@
 		p {
 			margin: 0 1rem 0 0;
 			color: $color-primary;
-			// &:last-of-type {
 			// 	margin-left: 3rem;
 			// }
 		}
@@ -96,6 +95,10 @@
 			margin-top: auto;
 			padding: 4rem 1rem 1rem 1rem;
 			z-index: 1;
+
+			p {
+				font-size: $font-size-base;
+			}
 		}
 	}
 	&__project {

@@ -40,7 +40,8 @@
 		
 		&__label {
 			position: relative;
-			display: flex;
+			// display: flex;
+			display: none;
 			color: $color-primary;
 			width: 100%;
 			order: 2;
