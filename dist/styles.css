@@ -2554,13 +2554,13 @@ html.with-featherlight {
 .global-footer {
   margin-top: 70px;
   background-color: #5E4078;
-  font-size: 20px;
+  font-size: 0.85rem;
   line-height: 1.5;
   color: white;
 }
 .global-footer p, .global-footer link, .global-footer a {
   color: white;
-  font-size: 20px;
+  font-size: 0.85rem;
 }
 .global-footer p:last-child {
   margin-bottom: 0;
