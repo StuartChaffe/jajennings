@@ -2255,6 +2255,9 @@ html.with-featherlight {
 .is-contained {
   margin: 0 auto;
 }
+.is-contained .text-image {
+  align-items: end;
+}
 .is-contained .text-image__image {
   max-width: 575px;
 }

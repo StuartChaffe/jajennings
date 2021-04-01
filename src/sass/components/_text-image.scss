@@ -113,6 +113,7 @@
 .is-contained {
 	margin: 0 auto;
 	.text-image {
+		align-items: end;
 		&__image {
 			max-width: 575px;
 			&--right {
