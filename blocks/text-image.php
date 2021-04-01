@@ -13,13 +13,13 @@ $contain = get_field('textimage-contain');
 $hide = get_field( 'textimage-image-hide');
 ?>
 <?php if ( $contain  == '1' ) { ?><div class="is-contained"><?php } ?>
-<div class="text-image" <?php if ( $id ) { ?>id="<?php echo $id ?>"<?php } ?>>
+<div class="text-image<?php if ( $contain  == '' ) { ?> text-image-not-contain<?php } ?> <?php echo $position ?>-main" <?php if ( $id ) { ?>id="<?php echo $id ?>"<?php } ?>>
 <?php if( have_rows('images') ): $i = 0; ?>
 	<?php while( have_rows('images') ): $i++; the_row();
 		$image = get_sub_field('textimage-image');
 		$imagetitle = get_sub_field('textimage-title', false, false);
 	?>
-	<div class="text-image__image image-<?php echo $i; ?> <?php if ( $i == '1' ) { echo 'is-visible'; } ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>">
+	<div class="text-image__image image-<?php echo $i; ?> <?php if ( $i == '1' ) { echo 'is-visible'; } ?> <?php echo $position ?> <?php if($hide == 'Yes'){ echo 'hidemobile'; } ?>"<?php if ( $contain  == '' ) { ?> style="background-image:url(<?php echo $image['url']; ?>);"<?php } ?>>
 		<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		<?php if ( $imagetitle ) { ?>
 			<div class="text-image__title">

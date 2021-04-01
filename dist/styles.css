@@ -2136,6 +2136,29 @@ html.with-featherlight {
   width: 12px;
 }
 
+.text-image-not-contain.text-image__image--right-main {
+  flex-direction: row-reverse;
+}
+
+.text-image.text-image-not-contain .is-visible {
+  padding-bottom: 27%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.text-image-not-contain img {
+  opacity: 0;
+  position: absolute;
+}
+
+@media (min-width: 50em) {
+  .text-image-not-contain .text-image__image {
+    position: relative;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: stretch;
+  }
+}
 .text-image {
   display: flex;
   flex-direction: column;
