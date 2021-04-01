@@ -2192,7 +2192,7 @@ html.with-featherlight {
 .text-image__content {
   width: 100%;
   padding: 1rem 1.5rem;
-  max-width: 595px;
+  max-width: 620px;
 }
 @media (min-width: 50em) {
   .text-image__content {
