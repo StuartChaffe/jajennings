@@ -1991,6 +1991,17 @@ html.with-featherlight {
   margin-top: 0;
 }
 
+.is-contained {
+  margin: 0 auto;
+}
+.is-contained .text-image__image {
+  max-width: 575px;
+}
+.is-contained .text-image__content {
+  padding-right: 0px;
+  max-width: 525px;
+}
+
 .global-container {
   display: flex;
   flex-direction: column;

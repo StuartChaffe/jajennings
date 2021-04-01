@@ -110,3 +110,15 @@
 .text-image + .container .cta {
 	margin-top: 0;
 }
+.is-contained {
+	margin: 0 auto;
+	.text-image {
+		&__image {
+			max-width: 575px;
+		}
+		&__content {
+			padding-right: 0px;
+			max-width: 525px;
+		}
+	}		
+}

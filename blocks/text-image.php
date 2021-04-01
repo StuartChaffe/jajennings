@@ -9,8 +9,10 @@ $code = get_field( 'textimage-code');
 $size = get_field( 'textimage-size');
 $id = get_field( 'textimage-id');
 $position = get_field('textimage-position');
+$contain = get_field('textimage-contain');
 $hide = get_field( 'textimage-image-hide');
 ?>
+<?php if ( $contain  == '1' ) { ?><div class="is-contained"><?php } ?>
 <div class="text-image" <?php if ( $id ) { ?>id="<?php echo $id ?>"<?php } ?>>
 <?php if( have_rows('images') ): $i = 0; ?>
 	<?php while( have_rows('images') ): $i++; the_row();
@@ -78,3 +80,4 @@ $hide = get_field( 'textimage-image-hide');
 
 	</div>
 </div>
+<?php if ( $contain  == '1' ) { ?></div><?php } ?>
