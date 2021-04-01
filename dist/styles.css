@@ -2259,7 +2259,7 @@ html.with-featherlight {
   max-width: 575px;
 }
 .is-contained .text-image__image--right + .text-image__content {
-  margin-left: auto;
+  margin-left: 0;
   padding-left: 0px;
   padding-right: 70px;
 }
