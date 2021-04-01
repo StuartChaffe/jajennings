@@ -1997,6 +1997,11 @@ html.with-featherlight {
 .is-contained .text-image__image {
   max-width: 575px;
 }
+.is-contained .text-image__image--right + .text-image__content {
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 70px;
+}
 .is-contained .text-image__content {
   padding-right: 0px;
   max-width: 525px;

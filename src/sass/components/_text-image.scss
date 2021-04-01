@@ -115,6 +115,13 @@
 	.text-image {
 		&__image {
 			max-width: 575px;
+			&--right {
+				+ .text-image__content {
+					margin-left: auto;
+					padding-left: 0px;
+					padding-right: 70px
+				}
+			}
 		}
 		&__content {
 			padding-right: 0px;
