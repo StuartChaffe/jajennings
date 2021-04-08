@@ -164,6 +164,9 @@
 			@include mq(medium) {
 				padding-right: 1rem;
 			}
+			p {
+				font-size: $font-size-base;
+			}
 		}
 	}		
 }

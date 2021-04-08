@@ -2049,6 +2049,9 @@ html.with-featherlight {
     padding-right: 1rem;
   }
 }
+.is-contained .text-image__content p {
+  font-size: 1rem;
+}
 
 .global-container {
   display: flex;
