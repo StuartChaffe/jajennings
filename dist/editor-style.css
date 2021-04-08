@@ -388,6 +388,7 @@ sup {
 .global-alert a {
   color: #000;
   font-size: 1rem;
+  font-weight: 600;
   background: #fac828;
   background: linear-gradient(45deg, #fac828 0%, #faaa28 100%);
   padding: 0.5rem;
