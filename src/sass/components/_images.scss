@@ -29,10 +29,15 @@
 		}
 		&:nth-child(3n+2),
 		&:nth-child(3n+3) {
-			width: calc(100vw / 2 - 0.5rem);
-			height: calc(70vw / 2);
+			width: 100vw;
+			// height: calc(70vw / 2);
 			// max-height: 870px;
-			max-width: calc(100% - 0.5rem);		
+			max-width: 100%;	
+			@include mq(medium) {
+				width: calc(100vw / 2 - 0.5rem);
+				max-width: calc(100% - 0.5rem);	
+				height: calc(70vw / 2);
+			}	
 		}
 		&:nth-child(3n+2) {
 			margin-left: 0;

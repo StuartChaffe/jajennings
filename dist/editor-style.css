@@ -1024,9 +1024,15 @@ dd {
   }
 }
 .images-item:nth-child(3n+2), .images-item:nth-child(3n+3) {
-  width: calc(100vw / 2 - 0.5rem);
-  height: calc(70vw / 2);
-  max-width: calc(100% - 0.5rem);
+  width: 100vw;
+  max-width: 100%;
+}
+@media (min-width: 50em) {
+  .images-item:nth-child(3n+2), .images-item:nth-child(3n+3) {
+    width: calc(100vw / 2 - 0.5rem);
+    max-width: calc(100% - 0.5rem);
+    height: calc(70vw / 2);
+  }
 }
 .images-item:nth-child(3n+2) {
   margin-left: 0;
