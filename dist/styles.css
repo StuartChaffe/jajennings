@@ -463,17 +463,17 @@ select {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #D8D8D8;
+  color: #999999;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #D8D8D8;
+  color: #999999;
 }
 
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: #D8D8D8;
+  color: #999999;
 }
 
 input[type=email],

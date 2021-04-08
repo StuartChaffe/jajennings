@@ -129,7 +129,7 @@ select {
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-	color:#D8D8D8;
+	color: lighten($color-black, 60%);
 }
 
 
