@@ -44,7 +44,7 @@ $nexttitle = get_field( 'next-project-title' );
 
 			<a href="/our-projects" class="next-project__all-projects">
 				<div class="next-project__all-projects--link">
-					<h4>Our Projects</h4> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
+					<h3>Our Projects</h3> <svg class="icon icon--arrow"><use xlink:href="#arrow"></use></svg>
 				</div>
 			</a>
 		</div>
