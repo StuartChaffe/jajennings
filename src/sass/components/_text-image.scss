@@ -114,21 +114,21 @@
 			p {
 				margin: 0;
 				color: $color-text-base;
+				display: inline-block;
 			}
 			.icon {
-				position: absolute;
+				position: relative;
 				display: inline-flex;
-				right: 0;
-				top: 0;
 				transition: .2s transform ease-in-out;
-				transform: translateY(5px);
+				transform: translateY(0px);
+				margin-left: 0.5rem;
 			}
 			&:hover, &:focus{
 				text-decoration: none;
 				color: inherit;
 				.icon {
 					transition: .2s transform ease-in-out;
-					transform: translate(0.5rem, 5px);
+					transform: translate(0.5rem, 0px);
 				}
 			}
 		}

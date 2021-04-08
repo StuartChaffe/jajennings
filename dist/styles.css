@@ -1236,8 +1236,8 @@ table tbody tr:hover {
   display: flex;
 }
 .icon--arrow {
-  width: 12.5px;
-  height: 10px;
+  width: 18px;
+  height: 14.5px;
   color: white;
 }
 .icon--linkedin {
@@ -2269,14 +2269,14 @@ html.with-featherlight {
 .text-image__content-link p {
   margin: 0;
   color: #000;
+  display: inline-block;
 }
 .text-image__content-link .icon {
-  position: absolute;
+  position: relative;
   display: inline-flex;
-  right: 0;
-  top: 0;
   transition: 0.2s transform ease-in-out;
-  transform: translateY(5px);
+  transform: translateY(0px);
+  margin-left: 0.5rem;
 }
 .text-image__content-link:hover, .text-image__content-link:focus {
   text-decoration: none;
@@ -2284,7 +2284,7 @@ html.with-featherlight {
 }
 .text-image__content-link:hover .icon, .text-image__content-link:focus .icon {
   transition: 0.2s transform ease-in-out;
-  transform: translate(0.5rem, 5px);
+  transform: translate(0.5rem, 0px);
 }
 
 .text-image + .container .cta, .text-image + .is-contained .cta {
