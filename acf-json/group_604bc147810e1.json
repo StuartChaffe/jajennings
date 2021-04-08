@@ -1,7 +1,27 @@
 {
     "key": "group_604bc147810e1",
     "title": "Map",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_606ebff266adc",
+            "label": "Map",
+            "name": "map",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +39,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615577426
+    "modified": 1617870843
 }
