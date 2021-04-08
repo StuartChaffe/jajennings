@@ -218,6 +218,10 @@ dd {
   margin-left: 0;
 }
 
+sup {
+  font-size: 10px;
+}
+
 .theme--purple h2, .theme--purple h3, .theme--purple h4 {
   color: #5E4078;
 }
