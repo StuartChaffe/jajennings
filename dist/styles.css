@@ -261,7 +261,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.8rem + 0.3vw);
+  font-size: calc(1.2rem + 0.3vw);
 }
 
 h5, .h5 {
@@ -384,10 +384,10 @@ figcaption p {
   margin-left: auto;
 }
 .form .frm_message, .frm_forms .frm_message {
-  font-size: calc(1.8rem + 0.3vw) !important;
+  font-size: calc(1.2rem + 0.3vw) !important;
 }
 .form .frm_message p, .frm_forms .frm_message p {
-  font-size: calc(1.8rem + 0.3vw) !important;
+  font-size: calc(1.2rem + 0.3vw) !important;
 }
 .form-field, .frm_forms-field {
   display: flex;
@@ -688,7 +688,7 @@ table tbody tr:hover {
   background-color: #5E4078;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300;
-  font-size: calc(1.8rem + 0.3vw);
+  font-size: calc(1.2rem + 0.3vw);
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
