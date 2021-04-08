@@ -138,11 +138,16 @@
 	margin-top: 0;
 }
 .is-contained {
-	margin: 0 auto;
+	// margin: 0 auto;
+	// max-width: $container;
+	@extend .container;
 	.text-image {
 		align-items: end;
 		&__image {
-			max-width: 575px;
+			max-width: 100%;
+			@include mq(medium) {
+				max-width: 575px;
+			}
 			&--right {
 				+ .text-image__content {
 					margin-left: 0;
@@ -152,8 +157,13 @@
 			}
 		}
 		&__content {
-			padding-right: 0px;
 			max-width: 525px;
+			@include mq($until: medium) {
+				padding: 0;
+			}
+			@include mq(medium) {
+				padding-right: 1rem;
+			}
 		}
 	}		
 }
