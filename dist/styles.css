@@ -1847,6 +1847,8 @@ html.with-featherlight {
 }
 .projects-item__content p {
   margin-bottom: 0;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
 .projects-item__content h2, .projects-item__content h3, .projects-item__content h4 {
   color: white;
