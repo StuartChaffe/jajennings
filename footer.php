@@ -30,7 +30,7 @@
 					
 				</div>
 				<div class="global-footer__content-top--images">
-					<a href="https://www.linkedin.com/company/j-a-jennings-inc" target="_blank"><svg class="icon icon--linkedin"><use xlink:href="#linkedin"></use></svg></a>
+					<a href="https://www.linkedin.com/company/j-a-jennings-inc" target="_blank"><p>Linkedin</p><svg class="icon icon--linkedin"><use xlink:href="#linkedin"></use></svg></a>
 				</div>
 			</div>
 			<div class="global-footer__content-bottom">

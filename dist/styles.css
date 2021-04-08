@@ -2675,6 +2675,9 @@ html.with-featherlight {
     margin-top: 2rem;
   }
 }
+.global-footer__content-top--images a p {
+  display: none;
+}
 .global-footer__content-bottom {
   display: flex;
   flex-direction: column;
