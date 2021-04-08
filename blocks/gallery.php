@@ -48,7 +48,7 @@ if( $gallery_items ) {
 			<p>Filter:</p>
 			<button data-filter="*">All</button>
 			<button data-filter=".image">Gallery</button>
-			<button data-filter=".project">Case Study</button>
+			<button data-filter=".project">Case Studies</button>
 		</div>
 		<div class="gallery__buttons-item">
 			<p>Markets:</p>

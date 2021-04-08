@@ -835,9 +835,10 @@ dd {
   width: auto;
   margin-bottom: 0;
   padding: 0.5rem 0;
+  font-size: 20px;
 }
 .gallery__buttons button {
-  font-size: 1rem;
+  font-size: 20px;
   color: #000;
   background-color: transparent;
   border: 0;

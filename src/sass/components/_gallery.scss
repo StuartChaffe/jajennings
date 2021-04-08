@@ -32,9 +32,10 @@
 			width: auto;
 			margin-bottom: 0;
 			padding: 0.5rem 0;
+			font-size: $body-size;
 		}
 		button {
-			font-size: $font-size-base;
+			font-size: $body-size;
 			color: $color-text-base;
 			background-color: transparent;
 			border: 0;
