@@ -11,7 +11,7 @@ $content = get_field( 'featured-projects-content' );
 
 <div class="container">
 <?php if ( $title ) { ?>
-	<h2><?php echo $title; ?></h2>
+	<h1 class="h2"><?php echo $title; ?></h1>
 <?php } ?>
 <?php if ( $content ) { ?>
 	<div class="projects__content">
