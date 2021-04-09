@@ -146,6 +146,7 @@
 		&__image {
 			max-width: 100%;
 			@include mq(medium) {
+				width: 30%;
 				max-width: 575px;
 			}
 			&--right {
@@ -157,12 +158,13 @@
 			}
 		}
 		&__content {
-			max-width: 525px;
+			max-width: 770px;
 			@include mq($until: medium) {
 				padding: 0;
 			}
 			@include mq(medium) {
 				padding-right: 1rem;
+				width: 70%;
 			}
 			p {
 				font-size: $font-size-base;

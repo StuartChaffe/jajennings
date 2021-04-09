@@ -2046,6 +2046,7 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .is-contained .text-image__image {
+    width: 30%;
     max-width: 575px;
   }
 }
@@ -2055,7 +2056,7 @@ html.with-featherlight {
   padding-right: 70px;
 }
 .is-contained .text-image__content {
-  max-width: 525px;
+  max-width: 770px;
 }
 @media (max-width: 49.99em) {
   .is-contained .text-image__content {
@@ -2065,6 +2066,7 @@ html.with-featherlight {
 @media (min-width: 50em) {
   .is-contained .text-image__content {
     padding-right: 1rem;
+    width: 70%;
   }
 }
 .is-contained .text-image__content p {
