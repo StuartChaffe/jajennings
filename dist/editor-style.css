@@ -677,16 +677,22 @@ sup {
     width: auto;
   }
 }
-.content-block__label + h2 {
+.content-block__label + h1,
+.content-block__label + h2,
+.content-block__label + .h2 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 @media (min-width: 50em) {
-  .content-block__label + h2 {
+  .content-block__label + h1,
+.content-block__label + h2,
+.content-block__label + .h2 {
     margin-bottom: 1em;
   }
 }
-.content-block__label + h2 + p {
+.content-block__label + h1 + p,
+.content-block__label + h2 + p,
+.content-block__label + .h2 + p {
   order: 3;
 }
 
