@@ -1624,6 +1624,8 @@ html.with-featherlight {
 }
 .next-project-item__content p {
   margin: 0;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
 .next-project-item__content .icon {
   display: flex;
