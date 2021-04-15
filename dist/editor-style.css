@@ -747,6 +747,7 @@ sup {
   padding-right: 1.5rem;
 }
 .cta a {
+  display: inline-flex;
   font-weight: 600;
 }
 .cta a:hover .icon--arrow {

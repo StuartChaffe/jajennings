@@ -4,6 +4,7 @@
 	padding-right: 1.5rem;
 	a {
 		// text-decoration: underline;
+		display: inline-flex;
 		font-weight: $font-weight-bold;
 		&:hover {
 			.icon--arrow {
