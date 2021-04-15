@@ -63,6 +63,10 @@
 		position: absolute;
 		top: 0;
 		height: 100%;
+		svg {
+			top: 0;
+			height: 100%;
+		}
 		&--left {
 			left: 0;
 		}

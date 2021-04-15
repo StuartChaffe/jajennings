@@ -781,6 +781,10 @@ table tbody tr:hover {
   top: 0;
   height: 100%;
 }
+.banner__overlay svg {
+  top: 0;
+  height: 100%;
+}
 .banner__overlay--left {
   left: 0;
 }
