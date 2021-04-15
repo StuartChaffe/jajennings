@@ -776,6 +776,16 @@ table tbody tr:hover {
 .banner__image--desktop {
   opacity: 0;
 }
+@media (max-width: 49.99em) {
+  .banner__image img {
+    max-width: none;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .banner__overlay {
   position: absolute;
   top: 0;
