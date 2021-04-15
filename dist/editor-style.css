@@ -1919,7 +1919,12 @@ html.with-featherlight {
 }
 
 .text-image-not-contain.text-image__image--right-main {
-  flex-direction: row-reverse;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .text-image-not-contain.text-image__image--right-main {
+    flex-direction: row-reverse;
+  }
 }
 
 .text-image.text-image-not-contain .is-visible {

@@ -1,5 +1,8 @@
 .text-image-not-contain.text-image__image--right-main {
-	flex-direction:row-reverse;
+	flex-direction: column;
+	@include mq(medium) {
+		flex-direction:row-reverse;
+	}
 }
 .text-image.text-image-not-contain .is-visible {
 	padding-bottom: 27%;
