@@ -1840,6 +1840,8 @@ html.with-featherlight {
   position: relative;
 }
 .projects-item__image img {
+  min-width: 100%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

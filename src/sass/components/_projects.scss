@@ -113,7 +113,6 @@
 				// min-width: 100%;
 				// min-height: 100%;
 				// width: auto;
-				
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -122,7 +121,8 @@
 
 				@include mq($until: medium) {
 					max-width: none;
-					height: 100%;
+					min-width: 100%;
+    				width: 100%;
 				}
 			}
 		}
