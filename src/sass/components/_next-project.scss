@@ -73,12 +73,13 @@
 		
 		&--link {
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 			margin-top: auto;
 			width: 100%;
 			.icon {
 				display: inline;
 				margin-left: auto;
+				margin-bottom: 0.5rem;
 				margin-right: 1.5rem;
 				transition: .2s margin-right ease-in-out;
 				color: white;

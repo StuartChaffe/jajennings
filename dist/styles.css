@@ -1681,13 +1681,14 @@ html.with-featherlight {
 }
 .next-project__all-projects--link {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: auto;
   width: 100%;
 }
 .next-project__all-projects--link .icon {
   display: inline;
   margin-left: auto;
+  margin-bottom: 0.5rem;
   margin-right: 1.5rem;
   transition: 0.2s margin-right ease-in-out;
   color: white;
