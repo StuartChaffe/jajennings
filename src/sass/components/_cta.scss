@@ -6,6 +6,7 @@
 		// text-decoration: underline;
 		display: inline-flex;
 		font-weight: $font-weight-bold;
+		align-items: center;
 		&:hover {
 			.icon--arrow {
 				transform: translate(0.5rem, -5px);
@@ -28,10 +29,11 @@
 	}
 
 	.icon--arrow {
-		position: absolute;
+		// position: absolute;
 		display: inline-flex;
+		margin-top: 0.5rem;
 		// right: 0;
-		bottom: 0;
+		// bottom: 0;
 		margin-left: 1.5rem;
 		transform: translate(0, -5px);
 		transition: .2s transform ease-in-out;

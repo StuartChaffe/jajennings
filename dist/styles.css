@@ -911,6 +911,7 @@ table tbody tr:hover {
 }
 .carousel-slider-item img {
   width: 100%;
+  height: 100%;
 }
 
 .content > p, .content > h1, .content > h2, .content > h3, .content > h4, .content > h5 {
@@ -1024,6 +1025,7 @@ table tbody tr:hover {
 .cta a {
   display: inline-flex;
   font-weight: 600;
+  align-items: center;
 }
 .cta a:hover .icon--arrow {
   transform: translate(0.5rem, -5px);
@@ -1040,9 +1042,8 @@ table tbody tr:hover {
   padding-top: 70px;
 }
 .cta .icon--arrow {
-  position: absolute;
   display: inline-flex;
-  bottom: 0;
+  margin-top: 0.5rem;
   margin-left: 1.5rem;
   transform: translate(0, -5px);
   transition: 0.2s transform ease-in-out;
