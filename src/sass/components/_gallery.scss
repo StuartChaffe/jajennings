@@ -1,8 +1,11 @@
 .gallery {
 	margin: 0 -0.5rem;
-	// &__content {
-	// 	margin-bottom: $spacing / 2;
-	// }
+	&__content {
+		margin-top: $spacing / 2;
+		@include mq(medium) {
+			margin-top: 0;
+		}
+	}
 	&__buttons {
 		display: flex;
 		align-items: center;

@@ -833,6 +833,14 @@ sup {
 .gallery {
   margin: 0 -0.5rem;
 }
+.gallery__content {
+  margin-top: 35px;
+}
+@media (min-width: 50em) {
+  .gallery__content {
+    margin-top: 0;
+  }
+}
 .gallery__buttons {
   display: flex;
   align-items: center;
