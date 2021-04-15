@@ -1041,6 +1041,7 @@ sup {
 .images-item:nth-child(3n+2), .images-item:nth-child(3n+3) {
   width: 100vw;
   max-width: 100%;
+  flex: 1;
 }
 @media (min-width: 50em) {
   .images-item:nth-child(3n+2), .images-item:nth-child(3n+3) {

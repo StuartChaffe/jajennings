@@ -32,7 +32,8 @@
 			width: 100vw;
 			// height: calc(70vw / 2);
 			// max-height: 870px;
-			max-width: 100%;	
+			max-width: 100%;
+			flex: 1;
 			@include mq(medium) {
 				width: calc(100vw / 2 - 0.5rem);
 				max-width: calc(100% - 0.5rem);	
