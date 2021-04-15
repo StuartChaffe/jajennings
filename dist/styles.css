@@ -2423,7 +2423,13 @@ html.with-featherlight {
   transition: 0.2s transform ease-in-out;
 }
 .global-header--nav ul .current_page_item a {
-  color: #785299;
+  font-weight: 600;
+}
+@media (min-width: 50em) {
+  .global-header--nav ul .current_page_item a {
+    font-weight: 300;
+    color: #785299;
+  }
 }
 .global-header--nav ul li {
   display: flex;

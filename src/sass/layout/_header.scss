@@ -77,7 +77,11 @@
 			}
 			.current_page_item {
 				a {
-					color: lighten($color-primary, 10%);
+					font-weight: $font-weight-bold;
+					@include mq(medium) {
+						font-weight: $font-weight-normal;
+						color: lighten($color-primary, 10%);
+					}
 				}
 			}
 
