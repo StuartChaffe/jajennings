@@ -46,32 +46,47 @@
 
 			.sub-menu {
 				// display: none;
-				visibility: hidden;
-				opacity: 0;
+				visibility: visible;
+				opacity: 1;
 				background-color: transparent; 
-				position: absolute;
+				position: relative;
 				flex-direction: column;
-				width: 80%;
+				width: 100%;
 				left: 0;
 				top: 100%;
 				transition: .3s all ease-in-out;
+				@include mq(medium) {
+					width: 80%;
+					visibility: hidden;
+					opacity: 0;
+					position: absolute;
+				}
 
 				li {
-					padding: 0 1.5rem;
+					padding: 0;
+					@include mq(medium) {
+						padding: 0 1.5rem;
+					}
 				}
 				li > a {
 					padding: 1rem 0;
 					width: 100%;
 					color: white;
-					border-bottom: 1px solid white;
+					border-bottom: none;
+					@include mq(medium) {
+						border-bottom: 1px solid white;
+					}
 
 					&:after {
-						content: url("../src/icons/arrow-white.svg");
+						content: '';
 						position: absolute;
 						right: 1.75rem;
 						width: 13px;
 						height: 10px;
 						transition: .2s transform ease-in-out;
+						@include mq(medium) {
+							content: url("../src/icons/arrow-white.svg");
+						}
 					}
 				}
 			}
@@ -94,7 +109,7 @@
 						color: white;
 					}
 					.sub-menu {
-						display: none;
+						// display: none;
 						@include mq(medium) {
 							display: flex;
 							visibility: visible;
@@ -180,6 +195,7 @@
 				background: $color-primary;
 				padding: 0.5rem 1.5rem;
 				li {
+					flex-direction: column;
 					a {
 						padding: 1rem 0;
 						width: 100%;
