@@ -1,9 +1,14 @@
 .pull-out {
 	background-color: $color-primary;
-	width: 80%;
-	margin-left: auto;
-	transform: translateY(50%);
+	width: 90%;
+    margin-left: auto;
+    transform: translateY(40px);
 	padding: 30px 40px 40px;
+
+	@include mq(medium) {
+		width: 80%;
+		transform: translateY(50%);
+	}
 	h2, h3, h4, p {
 		color: white;
 		margin: 0;

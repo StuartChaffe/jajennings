@@ -1579,8 +1579,6 @@ html.with-featherlight {
   position: relative;
 }
 .projects-item__image img {
-  min-width: 100%;
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1590,7 +1588,8 @@ html.with-featherlight {
 @media (max-width: 49.99em) {
   .projects-item__image img {
     max-width: none;
-    height: 100%;
+    min-width: 100%;
+    width: 100%;
   }
 }
 .projects-item__link {
@@ -1656,10 +1655,16 @@ html.with-featherlight {
 
 .pull-out {
   background-color: #5E4078;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
-  transform: translateY(50%);
+  transform: translateY(40px);
   padding: 30px 40px 40px;
+}
+@media (min-width: 50em) {
+  .pull-out {
+    width: 80%;
+    transform: translateY(50%);
+  }
 }
 .pull-out h2, .pull-out h3, .pull-out h4, .pull-out p {
   color: white;
