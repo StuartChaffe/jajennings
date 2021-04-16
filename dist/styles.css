@@ -2417,6 +2417,7 @@ html.with-featherlight {
 }
 .global-header--nav > div {
   height: 100%;
+  background: red;
 }
 @media (max-width: 49.99em) {
   .global-header--nav > div {
