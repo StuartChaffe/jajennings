@@ -1850,6 +1850,7 @@ html.with-featherlight {
   position: relative;
 }
 .projects-item__image img {
+  min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
