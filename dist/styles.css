@@ -782,6 +782,7 @@ table tbody tr:hover {
 }
 @media (max-width: 49.99em) {
   .banner__image img {
+    opacity: 0;
     max-width: none;
     min-width: 100%;
     position: absolute;

@@ -53,6 +53,7 @@
 		img {
 			opacity: 0;
 			@include mq($until: medium) {
+				opacity: 0;
 				max-width: none;
 				min-width: 100%;
 				position: absolute;
