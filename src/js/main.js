@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 	// The function actually applying the offset
 function offsetAnchor() {
 	if (location.hash.length !== 0) {
-	  window.scrollTo(window.scrollX, window.scrollY - 100);
+	  window.scrollTo(window.scrollX, window.scrollY - 200);
 	}
   }
   
