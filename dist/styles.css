@@ -2492,12 +2492,12 @@ html.with-featherlight {
   display: flex;
   height: 100%;
 }
-.global-header--nav ul li:hover > a {
+.global-header--nav ul li:hover > a, .global-header--nav ul li:focus > a {
   background-color: #5E4078;
   color: white;
 }
 @media (min-width: 50em) {
-  .global-header--nav ul li:hover .sub-menu {
+  .global-header--nav ul li:hover .sub-menu, .global-header--nav ul li:focus .sub-menu {
     display: flex;
     visibility: visible;
     opacity: 1;
@@ -2506,10 +2506,10 @@ html.with-featherlight {
     transition: 0.3s all ease-in-out;
   }
 }
-.global-header--nav ul li:hover .sub-menu a {
+.global-header--nav ul li:hover .sub-menu a, .global-header--nav ul li:focus .sub-menu a {
   background-color: transparent;
 }
-.global-header--nav ul li:hover .sub-menu a:hover:after {
+.global-header--nav ul li:hover .sub-menu a:hover:after, .global-header--nav ul li:focus .sub-menu a:hover:after {
   transform: translateX(0.5rem);
   transition: 0.2s transform ease-in-out;
 }
