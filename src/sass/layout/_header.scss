@@ -38,9 +38,6 @@
 
 		> div {
 			height: 100%;
-			@include mq($until: medium) {
-				overflow: auto;
-			}
 		}
 		ul {
 			padding-left: 0;
