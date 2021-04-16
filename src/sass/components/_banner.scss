@@ -45,11 +45,13 @@
 		// 	background-image: none !important;
 		// }
 
-		&--desktop {
+		&--desktop,
+		.hidedesktop {
 			opacity: 0;
 		}
 
 		img {
+			opacity: 0;
 			@include mq($until: medium) {
 				max-width: none;
 				min-width: 100%;

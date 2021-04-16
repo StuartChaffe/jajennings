@@ -462,7 +462,11 @@ sup {
   background-size: cover;
   background-position: center;
 }
-.banner__image--desktop {
+.banner__image--desktop,
+.banner__image .hidedesktop {
+  opacity: 0;
+}
+.banner__image img {
   opacity: 0;
 }
 @media (max-width: 49.99em) {
