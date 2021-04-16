@@ -38,7 +38,6 @@
 
 		> div {
 			height: 100%;
-			background: red;
 			@include mq($until: medium) {
 				overflow: auto;
 			}
