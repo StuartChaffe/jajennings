@@ -5,7 +5,7 @@
 				<div class="global-footer__content-top--contact">
 				<?php if(get_field('company_tel', 'options')) { ?>
 					<p>Telephone:<br />
-					<a href="<?php the_field('company_tel', 'options') ?>"><?php the_field('company_tel', 'options') ?></a></p>
+					<a href="tel:<?php the_field('company_tel', 'options') ?>"><?php the_field('company_tel', 'options') ?></a></p>
 				<?php } ?>
 				<?php if(get_field('company_fax', 'options')) { ?>
 					<p>Fax:<br />
