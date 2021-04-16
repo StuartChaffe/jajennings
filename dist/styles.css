@@ -1781,7 +1781,6 @@ html.with-featherlight {
   }
 }
 .projects-details__header h2 {
-  margin-bottom: 0;
   width: 100%;
 }
 @media (min-width: 50em) {
