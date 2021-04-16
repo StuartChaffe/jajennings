@@ -1560,7 +1560,12 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 140px;
+  margin-top: 2rem;
+}
+@media (min-width: 50em) {
+  .projects-item {
+    margin-top: 140px;
+  }
 }
 .projects-item:first-child {
   margin-top: 0;
@@ -1597,19 +1602,24 @@ html.with-featherlight {
   }
 }
 .projects-item__link {
-  position: absolute;
+  position: relative;
+  display: block;
   z-index: 1;
   background: #4882AC;
   right: 0;
-  width: 90%;
+  margin-left: auto;
+  width: 100%;
   padding: 30px;
-  transform: translateY(-50%);
+  margin-bottom: 1rem;
   color: white;
   transition: 0.2s background-color ease-in-out;
 }
 @media (min-width: 50em) {
   .projects-item__link {
+    position: absolute;
     width: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 0;
     padding: 20px 30px 30px 30px;
   }
 }
