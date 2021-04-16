@@ -1947,9 +1947,14 @@ html.with-featherlight {
 }
 
 .text-image.text-image-not-contain .is-visible {
-  padding-bottom: 27%;
+  padding-bottom: 74%;
   background-position: center center;
   background-size: cover;
+}
+@media (min-width: 50em) {
+  .text-image.text-image-not-contain .is-visible {
+    padding-bottom: 27%;
+  }
 }
 
 .text-image-not-contain img {
