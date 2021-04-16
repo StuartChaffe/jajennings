@@ -2418,6 +2418,11 @@ html.with-featherlight {
 .global-header--nav > div {
   height: 100%;
 }
+@media (max-width: 49.99em) {
+  .global-header--nav > div {
+    overflow: auto;
+  }
+}
 .global-header--nav ul {
   padding-left: 0;
   display: flex;
