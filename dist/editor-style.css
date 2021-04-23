@@ -2046,10 +2046,11 @@ html.with-featherlight {
 .text-image__content {
   width: 100%;
   padding: 1rem 1.5rem;
-  max-width: 620px;
+  max-width: 100%;
 }
 @media (min-width: 50em) {
   .text-image__content {
+    max-width: 620px;
     width: 50%;
     padding: 1rem 70px;
   }
