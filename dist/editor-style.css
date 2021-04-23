@@ -474,6 +474,7 @@ sup {
     opacity: 0;
     max-width: none;
     min-width: 100%;
+    min-height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1592,8 +1593,11 @@ html.with-featherlight {
   overflow: hidden;
   background: #ddd;
   position: relative;
+  background-size: cover;
+  background-position: center center;
 }
 .projects-item__image img {
+  opacity: 0;
   min-height: 100%;
   position: absolute;
   top: 50%;

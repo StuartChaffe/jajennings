@@ -110,8 +110,11 @@
 			overflow: hidden;
 			background: $color-grey;
 			position: relative;
+			background-size: cover;
+			background-position: center center;
 
 			img {
+				opacity: 0;
 				// max-width: none;
 				// min-width: 100%;
 				// min-height: 100%;
