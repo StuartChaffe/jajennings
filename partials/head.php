@@ -9,6 +9,16 @@
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png"><!-- 180×180 -->
 <?php wp_head(); ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NKV3N08MT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8NKV3N08MT');
+</script>
 </head>
 
 
