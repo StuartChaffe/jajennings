@@ -650,10 +650,17 @@ sup {
     max-width: 25%;
   }
 }
-.carousel-slider-item img {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
+@media (max-width: 49.99em) {
+  .carousel-slider-item img {
+    height: 100%;
+  }
+}
+@media (min-width: 50em) {
+  .carousel-slider-item img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+  }
 }
 
 .content > p, .content > h1, .content > h2, .content > h3, .content > h4, .content > h5 {
