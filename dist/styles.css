@@ -915,6 +915,11 @@ table tbody tr:hover {
     max-width: 25%;
   }
 }
+.carousel-slider-item__title p span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
 .carousel-slider-item img {
   max-width: none;
 }

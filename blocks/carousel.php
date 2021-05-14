@@ -28,10 +28,10 @@ $projects = get_field( 'carousel' );
 		<div class="carousel-slider-item">
 			<div class="carousel-slider-item__title"><p><?php echo $title ?>
 			<br />
-			<?php
+			<span><?php
 				foreach ( $terms as $term ) {
 				echo $term->name;
-			} ?></p></div>
+			} ?></span></p></div>
 			<img src="<?php echo $image['project-image-featured']['url']; ?>" alt="<?php echo $image['project-image-featured']['alt']; ?>" />
 		</div>
 		<?php endforeach; ?>

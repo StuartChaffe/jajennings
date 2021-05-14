@@ -41,6 +41,12 @@
 					@include mq(medium) {
 						max-width: 25%;
 					}
+
+					span {
+						display: block;
+						margin-top: 0.5rem;
+						font-weight: $font-weight-bold;
+					}
 				}
 			}
 			img {
