@@ -2501,7 +2501,7 @@ html.with-featherlight {
 .global-header--nav ul .sub-menu li > a:after {
   content: "";
   position: absolute;
-  right: 1.75rem;
+  right: 1.9rem;
   width: 13px;
   height: 10px;
   transition: 0.2s transform ease-in-out;
