@@ -915,6 +915,9 @@ table tbody tr:hover {
     max-width: 25%;
   }
 }
+.carousel-slider-item img {
+  max-width: none;
+}
 @media (max-width: 49.99em) {
   .carousel-slider-item img {
     height: 100%;
@@ -924,7 +927,6 @@ table tbody tr:hover {
   .carousel-slider-item img {
     min-width: 100%;
     min-height: 100%;
-    max-width: none;
   }
 }
 
